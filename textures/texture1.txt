@@ -22,26 +22,14 @@ brown1      64   128
 * brown1    0   0
 browngrn    64   128
 * browngrn  0   0
-cblue01     64   128
-* cblue01   0   0
 cement01    64   128
 * cement01  0   0
 compspan    32   128
 * compspan  0   0
-comptal2    64   128
-* comptal2  0   0
 comptall    128   128
 * comptall  0   0
 comtal02    64  128
 * comtal02  0   0
-crate1      64   128
-* crate1    0   0
-cratelit    64   128
-* cratelit  0   0
-cratiny     64   128
-* cratiny   0   0
-dface01     128   128
-* dface01   0   0
 door1       64   72
 * door1     0   0
 door3       64   72
@@ -62,20 +50,8 @@ exitsign    64   16
 * exitsign  0   0
 gray5       64   128
 * gray5     0   0
-gstsatyr    64   128
-* gstsatyr  0   0
 lite5       16   128
 * lite5     0   0
-marbfac3    128   128
-* marbfac3  0   0
-marble01    64   128
-* marble01  0   0
-marble02    64   128
-* marble02  0   0
-marble03    64   128
-* marble03  0   0
-marble04    64   128
-* marble04  0   0
 metal       64   128
 * metal     0   0
 metal1      64   128
@@ -88,28 +64,10 @@ plat1       128   128
 * plat1     0   0
 shawn2      64   128
 * shawn2    0   0
-skin01      64   128
-* skin01    0   0
-skin02      64   128
-* skin02    0   0
-skin03      64   128
-* skin03    0   0
-skinedge    64   128
-* skinedge  0   0
-skulls01    64   128
-* skulls01  0   0
 sky1        256   128
 * sky1      0   0
-sky2        256   128
-* sky2      0   0
-sky3        256   128
-* sky3      0   0
 sladwall    64   128
 * sladwall  0   0
-sp_dude4    64   128
-* sp_dude4  0   0
-sp_hot1     64   128
-* sp_hot1   0   0
 step6       32   16
 * step6     0   0
 stwar01     32   128
@@ -122,38 +80,18 @@ support3    64   128
 * support3  0   0
 sw1brn1     64   128
 * sw1brn1   0   0
-sw1garg     64   128
-* sw1garg   0   0
-sw1gston    64   128
-* sw1gston  0   0
-sw1hot      64   128   ; needs renaming
-* sw1hot    0   0
 sw1star     32   128   ; needs renaming
 * sw1star   0   0
-sw1wood     64   128   ; needs renaming
-* sw1wood   0   0
 sw2brn1     64   128
 * sw2brn1   0   0
-sw2garg     64   128
-* sw2garg   0   0
-sw2gston    64   128
-* sw2gston  0   0
-sw2hot      64   128   ; needs renaming
-* sw2hot    0   0
 sw2star     32   128   ; needs renaming
 * sw2star   0   0
-sw2wood     64   128   ; needs renaming
-* sw2wood   0   0
 tech01      64   128
 * tech01    0   0
 tech02      64   128
 * tech02    0   0
-tech03      64   128
-* tech03    0   0
 tech04      64   128
 * tech04    0   0
-wood01      64   128
-* wood01    0   0
 
 ; needed for doom startup
 SW1BRCOM    64  64
