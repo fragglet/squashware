@@ -81,7 +81,7 @@ DSSWTCHN
 DSSWTCHX
 DSTELEPT
 DSTINK = empty
-DSWPNUP
+DSWPNUP = dssgcock
 
 # List of Musics
 [musics]
