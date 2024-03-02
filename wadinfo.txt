@@ -104,9 +104,9 @@ D_INTROA
 
 # List of Pictures (with insertion point)
 [graphics]
-HELP1	0	0
-HELP2	0	0
-CREDIT	0	0
+HELP1	0	0 = TITLEPIC
+HELP2	0	0 = TITLEPIC
+CREDIT	0	0 = TITLEPIC
 TITLEPIC	0	0
 AMMNUM0	-1	0
 AMMNUM1	-1	0
