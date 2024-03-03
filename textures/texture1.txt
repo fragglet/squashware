@@ -68,8 +68,15 @@ sky1        256   128
 * sky1      0   0
 sladwall    64   128
 * sladwall  0   0
-step6       32   16
+step6       32   128
 * step6     0   0
+* step6     0   16      ; prevents tutti frutti
+* step6     0   32
+* step6     0   48
+* step6     0   64
+* step6     0   80
+* step6     0   96
+* step6     0   112
 stwar01     32   128
 * stwar01   0   0
 stwar02     32   128
