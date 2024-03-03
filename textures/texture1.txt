@@ -87,11 +87,11 @@ support3    64   128
 * support3  0   0
 sw1brn1     64   128
 * sw1brn1   0   0
-sw1star     32   128   ; needs renaming
-* sw1star   0   0
 sw2brn1     64   128
 * sw2brn1   0   0
-sw2star     32   128   ; needs renaming
+sw1strtn    32   128  ; renamed from SW1STAR to use a vanilla built-in name
+* sw1star   0   0
+sw2strtn    32   128
 * sw2star   0   0
 tech01      64   128
 * tech01    0   0
@@ -135,8 +135,6 @@ SW1STON2    64  64
 * ash01     0   0
 SW1STONE    64  64
 * ash01     0   0
-SW1STRTN    64  64
-* ash01     0   0
 SW2BRCOM    64  64
 * ash01     0   0
 SW2BRN2     64  64
@@ -170,6 +168,4 @@ SW2STON1    64  64
 SW2STON2    64  64
 * ash01     0   0
 SW2STONE    64  64
-* ash01     0   0
-SW2STRTN    64  64
 * ash01     0   0
