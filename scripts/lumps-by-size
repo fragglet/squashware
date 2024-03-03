@@ -1,0 +1,5 @@
+#!/bin/sh
+
+deutex -v0 -wadir newdoom1.wad  | tail -n +7 | while read a b rest; do
+  echo $b $a
+done | sort -nr
