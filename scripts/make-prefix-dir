@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Creates a directory tree of files with sizes equal to all lumps that
+# have a particular prefix. This can be listed with `ls -lS` to get the
+# largest prefixes, or the baobab tool can be pointed at to give a visual view
+# of how a WAD's contents are divided up.
+
+set -eu -o pipefail
+
+rm -rf prefixes
+mkdir prefixes
+
+# eg. "    12   89261  0x00009ec7  Packed      E1M2        No"
+wadptr -q -l newdoom1.wad | while read _ sz _ _ name merged_with; do
+    # We only count merged lumps once.
+    if [ "$merged_with" != "No" ]; then
+        continue
+    fi
+    ext_name=$(echo "${name}__________" | head -c 8)
+    prefix_name=$(echo "$ext_name" | head -c 4)
+    head -c "$sz" /dev/zero >> "prefixes/$prefix_name"
+done
+
+echo "Largest:"
+( cd prefixes; ls -lS | head -n 10 )
+pwd
+
