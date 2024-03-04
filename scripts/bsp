@@ -1,0 +1,8 @@
+#!/bin/sh
+# eg. ./scripts/bsp levels/e1m1.wad
+
+# ZokumBSP options that seem to produce the smallest size:
+# Blockmap options: try all 65536 offsets (o=4); subset compress (s);
+#                   no zero header (z=0)
+# Node builder options: multi-tree partition selection (a=m)
+exec zokumbsp -bo=4sz=0 -na=m "$@"
