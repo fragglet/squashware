@@ -891,7 +891,7 @@ floor6_1
 floor6_2
 floor7_1
 floor7_2
-f_sky1
+f_sky1   = gate3
 gate3
 gate4
 grass
