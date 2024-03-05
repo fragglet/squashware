@@ -842,7 +842,8 @@ browngrn
 cement01
 compspan
 comptall
-comtal02
+compscrn
+ct2panel
 door1
 door3
 doorblu

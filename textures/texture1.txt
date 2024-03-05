@@ -29,7 +29,17 @@ compspan    32   128
 comptall    128   128
 * comptall  0   0
 comtal02    64  128
-* comtal02  0   0
+* ct2panel  42  0
+* ct2panel  21  0
+* ct2panel  -1   0
+* compscrn  5   7
+* compscrn  37  7
+* compscrn  5   28
+* compscrn  37  28
+* compscrn  5   71
+* compscrn  37  71
+* compscrn  5   92
+* compscrn  37  92
 door1       64   72
 * door1     0   0
 door3       64   72
