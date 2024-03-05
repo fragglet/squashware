@@ -854,6 +854,7 @@ exitdoor
 exitsign
 gray5
 lite5
+litestrp
 metal1
 metal
 nuke24
@@ -870,7 +871,6 @@ support3
 sw3s0
 sw3s1
 tech01
-tech02
 tech04
 
 # List of Floors and Ceilings

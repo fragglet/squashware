@@ -143,7 +143,11 @@ tech01      64   128
 * tech01    0   64
 * tech01    32  64
 tech02      64   128
-* tech02    0   0
+* tech01    0   0
+* tech01    32  0
+* tech01    0   64
+* tech01    32  64
+* litestrp  0   0
 tech04      64   128
 * tech04    0   0
 
