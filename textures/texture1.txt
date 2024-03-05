@@ -126,13 +126,17 @@ support2    64   128
 support3    64   128
 * support3  0   0
 sw1brn1     64   128
-* sw1brn1   0   0
+* brown1    0   0
+* sw3s0     19  75
 sw2brn1     64   128
-* sw2brn1   0   0
+* brown1    0   0
+* sw3s1     19  75
 sw1strtn    32   128  ; renamed from SW1STAR to use a vanilla built-in name
-* sw1star   0   0
+* stwar01   0   0
+* sw3s0     3   77
 sw2strtn    32   128
-* sw2star   0   0
+* stwar01   0   0
+* sw3s1     3   77
 tech01      64   128
 * tech01    0   0
 * tech01    32  0

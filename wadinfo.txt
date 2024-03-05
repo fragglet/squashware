@@ -867,9 +867,8 @@ stwar01
 stwar02
 support2
 support3
-sw1brn1
-sw1star
-sw2star
+sw3s0
+sw3s1
 tech01
 tech02
 tech04
