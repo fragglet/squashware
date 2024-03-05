@@ -836,9 +836,7 @@ bigdoor6
 brick01
 brick02
 brick03
-brnpois
 brown1
-browngrn
 cement01
 compspan
 comptall
@@ -861,6 +859,7 @@ metal
 nuke24
 pipe2
 plat1
+ps20a0
 shawn2
 sky1
 sladwall

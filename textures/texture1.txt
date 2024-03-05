@@ -17,7 +17,8 @@ brick02     64   128
 brick03     64   128
 * brick03   0   0
 brnpois     64   128
-* brnpois   0   0
+* browngrn  0   0
+* ps20a0    1   60
 brown1      64   128
 * brown1    0   0
 browngrn    64   128
