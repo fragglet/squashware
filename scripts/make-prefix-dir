@@ -63,8 +63,6 @@ wadptr -q -l newdoom1.wad | while read _ sz _ _ name merged_with; do
             ;;
     esac
 
-    echo "$name - $section"
-
     # We only count merged lumps once.
     if [ "$merged_with" != "No" ]; then
         continue
@@ -97,6 +95,12 @@ wadptr -q -l newdoom1.wad | while read _ sz _ _ name merged_with; do
 
     ext_name=$(echo "${name}__________" | head -c 8)
     prefix_name=$(echo "$ext_name" | head -c 4)
+
+    # Don't aggregate music tracks
+    if [[ "$subdir" = "musics/" ]]; then
+        prefix_name=$name
+    fi
+
     head -c "$sz" /dev/zero >> "prefixes/$subdir$prefix_name$extn"
 done
 
