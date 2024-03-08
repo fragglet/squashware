@@ -12,7 +12,7 @@ fi
 deutex -doom2 bootstrap/ -iwad -build wadinfo.txt newdoom1.wad
 
 if wadptr -version >/dev/null; then
-    wadptr -q -c newdoom1.wad
+    wadptr -wipesides -q -c newdoom1.wad
 else
     echo "wadptr not installed; can't compress WAD."
 fi
