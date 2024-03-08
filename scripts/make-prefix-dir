@@ -2,26 +2,113 @@
 #
 # Creates a directory tree of files with sizes equal to all lumps that
 # have a particular prefix. This can be listed with `ls -lS` to get the
-# largest prefixes, or the baobab tool can be pointed at to give a visual view
-# of how a WAD's contents are divided up.
+# largest prefixes, or the qdirstat tool can be pointed at to give a visual
+# view of how a WAD's contents are divided up.
 
 set -eu -o pipefail
 
 rm -rf prefixes
 mkdir prefixes
 
+section=""
+curr_level=""
+
+# A gross hack, but we assign fake file extensions to the files within
+# different directories. This makes qdirstat show diferent lump types in
+# different colors.
+extn_for_subdir() {
+    case $subdir in
+        patches/)
+            echo ".dll"
+            ;;
+        flats/)
+            echo ".doc"
+            ;;
+        sprites/)
+            echo ".png"
+            ;;
+        sounds/)
+            echo ".tar"
+            ;;
+        musics/)
+            echo ".mp3"
+            ;;
+        levels/)
+            echo ".bak"
+            ;;
+        *)
+            echo ".mp4"
+            ;;
+    esac
+}
+
 # eg. "    12   89261  0x00009ec7  Packed      E1M2        No"
 wadptr -q -l newdoom1.wad | while read _ sz _ _ name merged_with; do
+
+    case $name in
+        P_START)
+            section=patches/
+            ;;
+        F_START)
+            section=flats/
+            ;;
+        S_START)
+            section=sprites/
+            ;;
+        E1M?)
+            curr_level=$name
+            ;;
+        ?_END)
+            section=
+            ;;
+    esac
+
+    echo "$name - $section"
+
     # We only count merged lumps once.
     if [ "$merged_with" != "No" ]; then
         continue
     fi
+
+    if [ $sz -eq 0 ]; then
+        continue
+    fi
+
+    case $name in
+        DS*)
+            subdir=sounds/
+            ;;
+        D_*)
+            subdir=musics/
+            ;;
+        E1M?|THINGS|LINEDEFS|SIDEDEFS|VERTEXES|SEGS|SSECTORS|NODES|SECTORS|REJECT|BLOCKMAP)
+            # Aggregate all level lumps into one file
+            subdir=levels/
+            name=$curr_level
+            ;;
+        *)
+            subdir=$section
+            ;;
+    esac
+
+    extn=$(extn_for_subdir)
+
+    mkdir -p "prefixes/$subdir"
+
     ext_name=$(echo "${name}__________" | head -c 8)
     prefix_name=$(echo "$ext_name" | head -c 4)
-    head -c "$sz" /dev/zero >> "prefixes/$prefix_name"
+    head -c "$sz" /dev/zero >> "prefixes/$subdir$prefix_name$extn"
 done
 
-echo "Largest:"
-( cd prefixes; ls -lS | head -n 10 )
-pwd
+# Aggregate small files, otherwise usage gets dominated by filesystem
+# inefficiencies and diagrams become unrepresentative of the WAD.
+find prefixes -type f | while read filename; do
+    sz=$(stat --format="%s" "$filename")
+    if [[ $sz -lt 4096 ]]; then
+        dir=$(dirname "$filename")
+        other_file="$dir/other"
+        cat "$filename" >> "$other_file"
+        rm -f "$filename"
+    fi
+done
 
