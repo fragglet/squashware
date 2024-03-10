@@ -4,6 +4,9 @@
 for embedded devices with restricted RAM and storage requirements. The
 goal is to open the door to more "It Runs Doom!" projects.
 
+[DOOF (Doom On One Floppy)](doof/) is a subproject that uses it to
+build a version of shareware Doom that fits on one floppy disk.
+
 What you will notice:
 * Console Doom levels
 * Restricted texture set
