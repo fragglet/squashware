@@ -23,9 +23,14 @@ jobs:
           VERSION=$(git rev-parse --short HEAD)
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+    - name: Build wadptr
+      run: |
+        git clone https://github.com/fragglet/wadptr.git
+        cd wadptr
+        make -j5
     - name: Build WAD
       run: |
-        ./build.sh
+        PATH="$PWD/wadptr:$PATH" ./build.sh
         mkdir artifacts-wad
         cp newdoom1.wad artifacts-wad
     - name: Upload WAD
