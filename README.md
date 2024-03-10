@@ -6,9 +6,10 @@ What you will notice:
 * Console Doom levels
 * Restricted texture set
 * Shorter sound effects
+* Smaller font on the menu and intermission screen
 * Simplified (for size) title screen and intermission screen
 
-What you're less likely to notice:
+What you might be less likely to notice:
 * Fewer animation frames and rotations on monsters
 * Fewer animations on powerup animations and other items
 
