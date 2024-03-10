@@ -14,6 +14,7 @@ jobs:
         sudo apt update
         sudo apt -q install dosbox deutex
     - name: Build WAD
+      run: |
         ./build.sh
         mkdir artifacts-wad
         cp newdoom1.wad artifacts-wad
@@ -23,6 +24,7 @@ jobs:
         path: "artifacts-wad"
         name: squashware-${{steps.version.outputs.VERSION}}
     - name: Build DOOF
+      run: |
         cd doof
         make
         mkdir artifacts-doof
