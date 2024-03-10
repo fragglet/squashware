@@ -39,6 +39,7 @@ jobs:
         path: "artifacts-wad"
         name: squashware-${{steps.version.outputs.VERSION}}
     - name: Build DOOF
+      timeout-minutes: 5
       run: |
         cd doof
         make
