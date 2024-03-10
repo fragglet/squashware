@@ -1,0 +1,34 @@
+name: Makefile CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt -q install dosbox deutex
+    - name: Build WAD
+        ./build.sh
+        mkdir artifacts-wad
+        cp newdoom1.wad artifacts-wad
+    - name: Upload WAD
+      uses: actions/upload-artifact@v1
+      with:
+        path: "artifacts-wad"
+        name: squashware-${{steps.version.outputs.VERSION}}
+    - name: Build DOOF
+        cd doof
+        make
+        mkdir artifacts-doof
+        cp doof.img artifacts-doof
+    - name: Upload ISO
+      uses: actions/upload-artifact@v1
+      with:
+        path: "doof/artifacts-doof"
+        name: doof-${{steps.version.outputs.VERSION}}
