@@ -154,8 +154,8 @@ STKEYS2	0	-1
 STKEYS3	0	-1 = STKEYS0
 STKEYS4	0	-1 = STKEYS1
 STKEYS5	0	-1 = STKEYS2
-STDISK	0   0 = empty
-STCDROM	0   0 = empty
+STDISK = empty
+STCDROM = empty
 STARMS  	96	-2
 STCFN033	0	0
 STCFN034	0	0
@@ -221,14 +221,14 @@ STCFN093	0	0
 STCFN094	0	0
 STCFN095	0	-4
 STCFN121	0	0
-STFB1	0	0 = empty
-STFB0	0	0 = empty
-STFB2	0	0 = empty
-STFB3	0	0 = empty
-STPB1	0	0 = empty
-STPB0	0	0 = empty
-STPB2	0	0 = empty
-STPB3	0	0 = empty
+STFB1 = empty
+STFB0 = empty
+STFB2 = empty
+STFB3 = empty
+STPB1 = empty
+STPB0 = empty
+STPB2 = empty
+STPB3 = empty
 STFST01	-5	-2
 STFST00	-5	-2
 STFST02	-5	-2
@@ -289,13 +289,13 @@ M_MSGON	59	0
 M_MSGOFF	59	0
 M_EPISOD	0	0
 M_EPI1	0	0
-M_EPI2	0	0 = empty
-M_EPI3	0	0 = empty
+M_EPI2 = empty
+M_EPI3 = empty
 M_HURT	0	0
 M_JKILL	0	0
 M_ROUGH	0	0
 M_SKILL	0	0
-M_NEWG	0	0 = M_NGAME
+M_NEWG = M_NGAME
 M_ULTRA	0	0
 M_NMARE	0	0
 M_SVOL	0	0
@@ -323,39 +323,39 @@ BRDR_BL	-5	0
 BRDR_B	0	0
 BRDR_BR	0	0
 WIMAP0	0	0
-WIA00900	0	0 = empty
-WIA00901	0	0 = empty
-WIA00902	0	0 = empty
-WIA00800	0	0 = empty
-WIA00801	0	0 = empty
-WIA00802	0	0 = empty
-WIA00700	0	0 = empty
-WIA00701	0	0 = empty
-WIA00702	0	0 = empty
-WIA00600	0	0 = empty
-WIA00601	0	0 = empty
-WIA00602	0	0 = empty
-WIA00500	0	0 = empty
-WIA00501	0	0 = empty
-WIA00502	0	0 = empty
-WIA00400	0	0 = empty
-WIA00401	0	0 = empty
-WIA00402	0	0 = empty
-WIA00300	0	0 = empty
-WIA00301	0	0 = empty
-WIA00302	0	0 = empty
-WIA00200	0	0 = empty
-WIA00201	0	0 = empty
-WIA00202	0	0 = empty
-WIA00100	0	0 = empty
-WIA00101	0	0 = empty
-WIA00102	0	0 = empty
-WIA00000	0	0 = empty
-WIA00001	0	0 = empty
-WIA00002	0	0 = empty
-WIURH0	-2	15 = empty
-WIURH1	62	15 = empty
-WISPLAT	15	11 = empty
+WIA00900 = empty
+WIA00901 = empty
+WIA00902 = empty
+WIA00800 = empty
+WIA00801 = empty
+WIA00802 = empty
+WIA00700 = empty
+WIA00701 = empty
+WIA00702 = empty
+WIA00600 = empty
+WIA00601 = empty
+WIA00602 = empty
+WIA00500 = empty
+WIA00501 = empty
+WIA00502 = empty
+WIA00400 = empty
+WIA00401 = empty
+WIA00402 = empty
+WIA00300 = empty
+WIA00301 = empty
+WIA00302 = empty
+WIA00200 = empty
+WIA00201 = empty
+WIA00202 = empty
+WIA00100 = empty
+WIA00101 = empty
+WIA00102 = empty
+WIA00000 = empty
+WIA00001 = empty
+WIA00002 = empty
+WIURH0 = empty
+WIURH1 = empty
+WISPLAT = empty
 WIOSTK	0	0
 WIOSTI	0	0
 WIF	0	-8
