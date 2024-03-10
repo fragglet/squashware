@@ -12,7 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt -q install dosbox deutex
+        sudo apt -q install dosbox deutex jlha
     - name: Find Git version
       id: version
       run: |

@@ -11,9 +11,13 @@ install/doof.dat: doof.dat.template DOOF.EXE
 	sed "s/9999999/$$(stat -c "%s" DOOF.EXE)/" \
           < $< > $@
 
-DOOF.EXE: staging
+DOOF.EXE: doof.lzh
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
 	    dosbox -conf mksfx.cfg
+
+doof.lzh: staging
+	rm -f $@
+	cd $<; lha a ../$@ *
 
 staging: $(FASTDOOM_FILES)
 	rm -rf staging
@@ -23,6 +27,6 @@ staging: $(FASTDOOM_FILES)
 	cp ../newdoom1.wad staging/doom1.wad
 
 clean:
-	rm -rf doof.img staging DOOF.EXE DOOF.LZH \
+	rm -rf doof.img staging DOOF.EXE doof.lzh \
                install/doof.dat
 
