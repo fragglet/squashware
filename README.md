@@ -1,3 +1,5 @@
+![Monty Python foot squashing the Doom status bar face](headsquash.png)
+
 **DOOM: Squashware Edition** is a rework of the Doom Shareware IWAD
 for embedded devices with restricted RAM and storage requirements. The
 goal is to open the door to more "It Runs Doom!" projects.
