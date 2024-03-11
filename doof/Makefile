@@ -17,7 +17,7 @@ DOOF.EXE: doof.lzh
 
 doof.lzh: staging
 	rm -f $@
-	cd $<; lha a ../$@ *
+	cd $<; lha -ao5 ../$@ *
 
 staging: $(FASTDOOM_FILES)
 	rm -rf staging
