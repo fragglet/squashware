@@ -42,9 +42,14 @@ jobs:
       timeout-minutes: 5
       run: |
         cd doof
-        nice make
+        make
         mkdir artifacts-doof
         cp doof.img artifacts-doof
+    - name: Test DOOF install
+      timeout-minutes: 5
+      run: |
+        cd doof
+        make check
     - name: Upload DOOF disk image
       uses: actions/upload-artifact@v1
       with:
