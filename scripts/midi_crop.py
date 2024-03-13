@@ -56,6 +56,10 @@ def crop_file(f, new_len):
 	t = outfile.tracks[0]
 
 	curr_time = 0
+	curr_real_time = 0
+	time_adjust = 0
+	target_len = int((new_len // 269.5) * 269.5)
+	speedup = target_len / new_len
 
 	for msg in f.tracks[0]:
 		print(msg)
@@ -63,11 +67,22 @@ def crop_file(f, new_len):
 		if not isinstance(msg, mido.Message):
 			continue
 
-		if curr_time >= new_len:
+		msg = msg.copy()
+		time_adjust += msg.time * speedup
+		msg.time = int(time_adjust)
+		time_adjust -= msg.time
+		curr_real_time += msg.time
+		if (curr_real_time + 8) >= target_len:
 			break
 		t.append(msg)
 
-	print(len(t))
+	# "All notes off" for all channels, no hanging notes at end of track.
+	for chan in sorted(used_channels(f)):
+		t.append(mido.Message("control_change", channel=chan,
+		                      control=123))
+
+	t.append(mido.MetaMessage("end_of_track"))
+
 	return outfile
 
 def detect_loop_points(f):
