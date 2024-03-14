@@ -8,6 +8,7 @@ goal is to open the door to more "It Runs Doom!" projects.
 build a version of shareware Doom that fits on one floppy disk.
 
 What you will notice:
+* IWAD file size under 2MB
 * Console Doom levels
 * Restricted texture set
 * Shorter sound effects
@@ -17,4 +18,5 @@ What you will notice:
 What you might be less likely to notice:
 * Fewer animation frames and rotations on monsters
 * Fewer animations on powerup animations and other items
+* Shorter music tracks
 
