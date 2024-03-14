@@ -1,0 +1,26 @@
+#!/bin/sh
+
+tmp=$(mktemp -d)
+cleanup() {
+        rm -rf "$tmp"
+}
+trap cleanup EXIT
+
+SDL_VIDEODRIVER=dummy
+SDL_AUDIODRIVER=dummy
+SOURCE_PORT=chocolate-doom
+export SDL_VIDEODRIVER SDL_AUDIODRIVER
+
+demofile=$1; shift
+
+# We disable blitting because we're using the SDL dummy backend, but we
+# still draw the screen and simulate sound and music playback, to make
+# sure that everything works correctly. We provide config files that
+# reduce the CPU usage during demo playback.
+$SOURCE_PORT -iwad ../newdoom1.wad \
+             -timedemo "$demofile" \
+             -config ./default.cfg -extraconfig ./choco.cfg \
+             -noblit -noautoload -nogui -nograbmouse \
+             -statdump $tmp/statdump.txt "$@" >$tmp/log.txt 2>&1 || true
+
+cat $tmp/statdump.txt

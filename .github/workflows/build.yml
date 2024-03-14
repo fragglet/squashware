@@ -12,7 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt -q install dosbox deutex jlha-utils
+        sudo apt -q install dosbox deutex jlha-utils chocolate-doom
     - name: Find Git version
       id: version
       run: |
@@ -33,6 +33,9 @@ jobs:
         PATH="$PWD/wadptr:$PATH" ./build.sh
         mkdir artifacts-wad
         cp newdoom1.wad artifacts-wad
+    - name: Check demo sync
+        cd playthru
+        make -j5 check
     - name: Upload WAD
       uses: actions/upload-artifact@v1
       with:
