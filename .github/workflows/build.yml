@@ -34,6 +34,7 @@ jobs:
         mkdir artifacts-wad
         cp newdoom1.wad artifacts-wad
     - name: Check demo sync
+      run: |
         cd playthru
         make -j5 check
     - name: Upload WAD
