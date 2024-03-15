@@ -58,7 +58,7 @@ def crop_file(f, new_len):
 	curr_time = 0
 	curr_real_time = 0
 	time_adjust = 0
-	target_len = int((new_len // 269.5) * 269.5)
+	target_len = int((new_len // 273) * 273)
 	speedup = target_len / new_len
 
 	for msg in f.tracks[0]:
