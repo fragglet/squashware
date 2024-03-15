@@ -58,12 +58,12 @@ def crop_file(f, new_len):
 	curr_time = 0
 	curr_real_time = 0
 	time_adjust = 0
-	target_len = int((new_len // 273) * 273)
+	target_len = int((new_len // 275.4) * 275.4)
 	speedup = target_len / new_len
 
 	for msg in f.tracks[0]:
-		print(msg)
 		curr_time += msg.time
+		print(curr_time, msg)
 		if not isinstance(msg, mido.Message):
 			continue
 
@@ -72,9 +72,11 @@ def crop_file(f, new_len):
 		msg.time = int(time_adjust)
 		time_adjust -= msg.time
 		curr_real_time += msg.time
-		if (curr_real_time + 8) >= target_len:
+		if (curr_real_time + 15) >= target_len:
 			break
 		t.append(msg)
+
+	print(curr_real_time, target_len)
 
 	# "All notes off" for all channels, no hanging notes at end of track.
 	for chan in sorted(used_channels(f)):
