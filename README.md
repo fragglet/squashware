@@ -8,7 +8,7 @@ goal is to open the door to more "It Runs Doom!" projects.
 build a version of shareware Doom that fits on one floppy disk.
 
 What you will notice:
-* IWAD file size under 2MB
+* IWAD file size under 2MB; silent IWAD (no sounds/music) under 1.5MB
 * Console Doom levels
 * Restricted texture set
 * Shorter sound effects
