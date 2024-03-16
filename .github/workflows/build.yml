@@ -35,6 +35,8 @@ jobs:
         cp newdoom1.wad artifacts-wad
         mkdir artifacts-silent-wad
         cp newdoom1_silent.wad artifacts-silent-wad
+        mkdir artifacts-1lev-wad
+        cp newdoom1_1lev.wad artifacts-1lev-wad
     - name: Check demo sync
       run: |
         cd playthru
@@ -49,6 +51,11 @@ jobs:
       with:
         path: "artifacts-silent-wad"
         name: squashware-silent-${{steps.version.outputs.VERSION}}
+    - name: Upload 1-level WAD
+      uses: actions/upload-artifact@v1
+      with:
+        path: "artifacts-1lev-wad"
+        name: squashware-1lev-${{steps.version.outputs.VERSION}}
     - name: Build DOOF
       timeout-minutes: 5
       run: |
