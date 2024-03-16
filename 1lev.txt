@@ -107,6 +107,7 @@ PLAYT0 = empty
 PLAYU0 = empty
 PLAYV0 = empty
 PLAYW0 = empty
+
 # TODO: Do we want the weapons that aren't on E1M1?
 # SAWGA0	-75	-113
 # SAWGB0	-75	-113
@@ -136,43 +137,39 @@ PLAYW0 = empty
 # MISLA7A3	16	13 = MISLA8A2
 # MISLA6A4	7	13 = MISLA5
 # MISLA5  	7	13
-# TODO: What decorations and powerups can we drop?
-# POL5A0	30	5
-# CANDA0	8	15
-# CBRAA0	15	57
+
+BKEYA0    = empty
+BKEYB0    = empty
+YKEYA0    = empty
+YKEYB0    = empty
+RKEYA0    = empty
+RKEYB0    = empty
+SUITA0    = empty
+PVISA0    = empty
+PVISB0    = empty
+PMAPA0    = empty
+PMAPB0    = empty
+PMAPC0    = empty
+PMAPD0    = empty
+PINSA0    = empty
+PINSB0    = empty
+PINSC0    = empty
+PINSD0    = empty
+SOULA0    = empty
+SOULB0    = empty
+SOULC0    = empty
+SOULD0    = empty
+TREDA0    = empty
+TREDB0    = empty
+TREDC0    = empty
+TREDD0    = empty
+
+# TODO: Some of these are only used in multiplayer mode:
 # LAUNA0	31	18
 # CSAWA0	31	23
 # ROCKA0	6	27
-# ARM2A0	15	17
-# ARM2B0	15	17 = ARM2A0
-# COLUA0	9	43
 # BROKA0	27	20
-# SBOXA0	16	12
-# BKEYA0	7	19 = BKEYB0
-# BKEYB0	7	19
-# YKEYA0	7	19 = YKEYB0
-# YKEYB0	7	19
-# RKEYA0	7	19 = RKEYB0
-# RKEYB0	7	19
-# SUITA0	12	51
-# PVISA0	13	9
-# PVISB0	13	9 = PVISA0
-# PMAPA0	13	23
-# PMAPB0	13	23 = PMAPA0
-# PMAPC0	13	23 = PMAPA0
-# PMAPD0	13	23 = PMAPA0
-# PINSA0	11	39
-# PINSB0	11	39
-# PINSC0	11	39
-# PINSD0	11	39
-# SOULA0	14	39
-# SOULB0	14	39
-# SOULC0	14	39
-# SOULD0	14	39
-# TREDA0	14	92
-# TREDB0	14	87
-# TREDC0	14	87
-# TREDD0	14	93
+# MGUNA0	25	18
 
 [patches]
 # None of these patches are used in textures used in E1M1:
