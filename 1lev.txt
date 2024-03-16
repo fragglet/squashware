@@ -207,9 +207,6 @@ WILV07	0	-6  = WILV00
 WILV08	0	-6  = WILV00
 
 [flats]
-# TODO: We need to change F_SKY1 in wadinfo.txt to resolve this:
-# f_sky1   = gate3
-
 # None of these flats are used in E1M1:
 ceil3_2 = nukage3
 flat5_2 = nukage3
