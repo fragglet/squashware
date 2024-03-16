@@ -1,0 +1,229 @@
+# deutex config for building the 1-level IWAD. This gets applied on top of
+# the basic IWAD but all levels get replaced with E1M1 and all monsters,
+# textures and sprites not used on E1M1 are removed.
+[levels]
+E1M2 = E1M1
+E1M3 = E1M1
+E1M4 = E1M1
+E1M5 = E1M1
+E1M6 = E1M1
+E1M7 = E1M1
+E1M8 = E1M1
+E1M9 = E1M1
+
+[lumps]
+DEMO1 = e1m1demo
+DEMO2 = e1m1demo
+DEMO3 = e1m1demo
+
+[sounds]
+# No pinky demon or baron:
+DSSGTATK = empty
+DSSGTDTH = empty
+DSSGTSIT = empty
+DSBRSDTH = empty
+DSBRSSIT = empty
+DSDMPAIN = empty
+# There are no teleporters on E1M1:
+DSTELEPT = empty
+# No crushers on E1M1:
+DSSTNMOV = empty
+# TODO: Do we want the sounds for rocket launcher, chainsaw?
+# DSRLAUNC
+# DSSAWFUL
+# DSSAWHIT
+# DSSAWIDL
+# DSSAWUP
+
+[musics]
+D_E1M2 = D_E1M1
+D_E1M3 = D_E1M1
+D_E1M4 = D_E1M1
+D_E1M5 = D_E1M1
+D_E1M6 = D_E1M1
+D_E1M7 = D_E1M1
+D_E1M8 = D_E1M1
+D_E1M9 = D_E1M1
+D_INTRO = D_INTROA
+D_VICTOR = D_INTER
+
+[sprites]
+# No pinky demon or baron on E1M1:
+SARGA0 = empty
+SARGB0 = empty
+SARGC0 = empty
+SARGD0 = empty
+SARGE0 = empty
+SARGF0 = empty
+SARGG0 = empty
+SARGH0 = empty
+SARGI0 = empty
+SARGJ0 = empty
+SARGK0 = empty
+SARGL0 = empty
+SARGM0 = empty
+SARGN0 = empty
+BOSSA0 = empty
+BOSSB0 = empty
+BOSSC0 = empty
+BOSSD0 = empty
+BOSSE0 = empty
+BOSSF0 = empty
+BOSSG0 = empty
+BOSSH0 = empty
+BOSSI0 = empty
+BOSSJ0 = empty
+BOSSK0 = empty
+BOSSL0 = empty
+BOSSM0 = empty
+BOSSN0 = empty
+BOSSO0 = empty
+BAL7A0 = empty
+BAL7B0 = empty
+BAL7C0 = empty
+BAL7D0 = empty
+BAL7E0 = empty
+# TODO: We can reuse the POSS* sprites for PLAY, to make multiplayer
+# a little bit playable.
+PLAYA0 = empty
+PLAYB0 = empty
+PLAYC0 = empty
+PLAYD0 = empty
+PLAYE0 = empty
+PLAYF0 = empty
+PLAYG0 = empty
+PLAYH0 = empty
+PLAYI0 = empty
+PLAYJ0 = empty
+PLAYK0 = empty
+PLAYL0 = empty
+PLAYM0 = empty
+PLAYN0 = empty
+PLAYO0 = empty
+PLAYP0 = empty
+PLAYR0 = empty
+PLAYS0 = empty
+PLAYT0 = empty
+PLAYU0 = empty
+PLAYV0 = empty
+PLAYW0 = empty
+# TODO: Do we want the weapons that aren't on E1M1?
+# SAWGA0	-75	-113
+# SAWGB0	-75	-113
+# SAWGC0	-68	-79
+# SAWGD0	-67	-79
+# CHGGA0	-113	-117
+# CHGGB0	-115	-119
+# CHGFA0	-118	-98
+# CHGFB0	-120	-97
+# MISLB0	37	29
+# MISLC0	42	34
+# MISLD0	50	43
+# TFOGA0	19	58
+# TFOGB0	19	51
+# TFOGC0	20	45
+# TFOGD0	15	44
+# TFOGE0	8	34
+# TFOGF0	4	30
+# MISGA0	-123	-121
+# MISGB0	-116	-125
+# MISFA0	-136	-105
+# MISFB0	-126	-101
+# MISFC0	-117	-94
+# MISFD0	-112	-81
+# MISLA1  	16	13 = MISLA8A2
+# MISLA8A2	16	13
+# MISLA7A3	16	13 = MISLA8A2
+# MISLA6A4	7	13 = MISLA5
+# MISLA5  	7	13
+# TODO: What decorations and powerups can we drop?
+# POL5A0	30	5
+# CANDA0	8	15
+# CBRAA0	15	57
+# LAUNA0	31	18
+# CSAWA0	31	23
+# ROCKA0	6	27
+# ARM2A0	15	17
+# ARM2B0	15	17 = ARM2A0
+# COLUA0	9	43
+# BROKA0	27	20
+# SBOXA0	16	12
+# BKEYA0	7	19 = BKEYB0
+# BKEYB0	7	19
+# YKEYA0	7	19 = YKEYB0
+# YKEYB0	7	19
+# RKEYA0	7	19 = RKEYB0
+# RKEYB0	7	19
+# SUITA0	12	51
+# PVISA0	13	9
+# PVISB0	13	9 = PVISA0
+# PMAPA0	13	23
+# PMAPB0	13	23 = PMAPA0
+# PMAPC0	13	23 = PMAPA0
+# PMAPD0	13	23 = PMAPA0
+# PINSA0	11	39
+# PINSB0	11	39
+# PINSC0	11	39
+# PINSD0	11	39
+# SOULA0	14	39
+# SOULB0	14	39
+# SOULC0	14	39
+# SOULD0	14	39
+# TREDA0	14	92
+# TREDB0	14	87
+# TREDC0	14	87
+# TREDD0	14	93
+
+[patches]
+# None of these patches are used in textures used in E1M1:
+ash01     = bigdoor2
+bigdoor6  = bigdoor2
+brick01   = bigdoor2
+brick02   = bigdoor2
+brick03   = bigdoor2
+cement01  = bigdoor2
+door1     = bigdoor2
+doorblu   = bigdoor2
+doorred   = bigdoor2
+dooryel   = bigdoor2
+gray5     = bigdoor2
+litestrp  = bigdoor2
+metal1    = bigdoor2
+metal     = bigdoor2
+pipe2     = bigdoor2
+plat1     = bigdoor2
+ps20a0    = bigdoor2
+shawn2    = bigdoor2
+sladwall  = bigdoor2
+support3  = bigdoor2
+tech01    = bigdoor2
+tech04    = bigdoor2
+
+[graphics]
+WILV01	0	-6  = WILV00
+WILV02	0	-6  = WILV00
+WILV03	0	-6  = WILV00
+WILV04	0	-6  = WILV00
+WILV05	0	-6  = WILV00
+WILV06	0	-6  = WILV00
+WILV07	0	-6  = WILV00
+WILV08	0	-6  = WILV00
+
+[flats]
+# TODO: We need to change F_SKY1 in wadinfo.txt to resolve this:
+# f_sky1   = gate3
+
+# None of these flats are used in E1M1:
+ceil3_2 = nukage3
+flat5_2 = nukage3
+floor0_3 = nukage3
+floor3_3 = nukage3
+floor4_6 = nukage3
+floor6_1 = nukage3
+floor6_2 = nukage3
+floor7_2 = nukage3
+gate3 = nukage3
+gate4 = nukage3
+grass = nukage3
+step1 = nukage3
+step2 = nukage3
