@@ -29,7 +29,7 @@ check:
 	diff -u fastdoom/fdoom.exe /tmp/doof-autoinst/DOOFINST/FDOOM.EXE
 	echo Install worked successfully
 
-staging: $(FASTDOOM_FILES)
+staging: $(FASTDOOM_FILES) ../newdoom1.wad
 	rm -rf staging
 	mkdir -p staging/inter
 	cp $(FASTDOOM_FILES) staging/
