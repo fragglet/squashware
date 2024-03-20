@@ -6,6 +6,9 @@ doof.img: empty.img install/doof.dat DOOF.EXE
 	cp empty.img $@
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
 	    dosbox -conf mkdisk.cfg
+	@echo
+	@cat DIRLIST.TXT
+	@rm -f DIRLIST.TXT
 
 install/doof.dat: doof.dat.template DOOF.EXE
 	sed "s/9999999/$$(stat -c "%s" DOOF.EXE)/" \
