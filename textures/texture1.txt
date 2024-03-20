@@ -165,6 +165,7 @@ tech02      64   128
 * litestrp  0   0
 tech04      64   128
 * tech04    0   0
+* tech04    0   64
 
 ; needed for doom startup
 SW1BRCOM    64  64
