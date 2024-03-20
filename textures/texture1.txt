@@ -82,6 +82,8 @@ exitsign    64   16
 * exitsign  0   0
 gray5       64   128
 * gray5     0   0
+* gray5     0   63
+* gray5     0   72
 lite5       16   128
 * lite5     0   0
 * lite5     0   8
