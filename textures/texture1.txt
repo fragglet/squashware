@@ -113,7 +113,9 @@ pipe2       64   128
 plat1       128   128
 * plat1     0   0
 shawn2      64   128
-* shawn2    0   0
+* shawn2    0   -20
+* shawn2    0   36
+* shawn2    0   92
 sky1        256   128
 * sky1      0   0
 sladwall    64   128
