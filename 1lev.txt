@@ -83,30 +83,6 @@ BAL7B0 = empty
 BAL7C0 = empty
 BAL7D0 = empty
 BAL7E0 = empty
-# TODO: We can reuse the POSS* sprites for PLAY, to make multiplayer
-# a little bit playable.
-PLAYA0 = empty
-PLAYB0 = empty
-PLAYC0 = empty
-PLAYD0 = empty
-PLAYE0 = empty
-PLAYF0 = empty
-PLAYG0 = empty
-PLAYH0 = empty
-PLAYI0 = empty
-PLAYJ0 = empty
-PLAYK0 = empty
-PLAYL0 = empty
-PLAYM0 = empty
-PLAYN0 = empty
-PLAYO0 = empty
-PLAYP0 = empty
-PLAYR0 = empty
-PLAYS0 = empty
-PLAYT0 = empty
-PLAYU0 = empty
-PLAYV0 = empty
-PLAYW0 = empty
 
 # TODO: Do we want the weapons that aren't on E1M1?
 # SAWGA0	-75	-113
