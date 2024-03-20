@@ -6,6 +6,7 @@ aashitty    64  64
 * ash01     0   0
 ash01       64   128
 * ash01     0   0
+* ash01     0   64
 bigdoor2    128   128
 * bigdoor2  0   0
 bigdoor6    64   112
