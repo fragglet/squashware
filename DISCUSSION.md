@@ -1,3 +1,5 @@
+This is a work-in-progress discussion of the techniques used for compression
+in this project.
 
 # Background
 
