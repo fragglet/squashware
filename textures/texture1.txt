@@ -25,7 +25,10 @@ brown1      64   128
 browngrn    64   128
 * browngrn  0   0
 cement01    64   128
+* cement01  0   64
+* cement01  32  64
 * cement01  0   0
+* cement01  32  0
 compspan    32   128
 * compspan  0   0
 comptall    128   128
