@@ -29,8 +29,9 @@ your hair dryer which doesn't have a speaker anyway.
 
 But wait, there's more!
 
-Is a 1.5MB IWAD file still too large for you? The *1-level* version removes
-all except the first level of the game, and is under 850KB. Perfect for
-demoing your port of Doom to a dead badger, when you're not really serious
-about actually playing the game all the way through.
+Is a 1.5MB IWAD file still too large for you? The *1-level* version
+removes all except the first level of the game, and is under 800KB.
+Perfect for when you just want to make a demo video of your port of Doom
+to run on a dead badger, and you're not really serious about actually
+playing the game all the way through.
 

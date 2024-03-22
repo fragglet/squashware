@@ -185,15 +185,12 @@ WILV08	0	-6  = WILV00
 [flats]
 # None of these flats are used in E1M1:
 ceil3_2 = nukage3
-flat5_2 = nukage3
 floor0_3 = nukage3
 floor3_3 = nukage3
 floor4_6 = nukage3
 floor6_1 = nukage3
 floor6_2 = nukage3
-floor7_2 = nukage3
 gate3 = nukage3
-gate4 = nukage3
 grass = nukage3
 step1 = nukage3
 step2 = nukage3

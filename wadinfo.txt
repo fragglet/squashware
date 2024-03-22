@@ -880,10 +880,8 @@ tech04
 [flats]
 ceil3_2
 ceil5_1
-cratop2
 flat14
 flat23
-flat5_2
 flat5_4
 floor0_3
 floor3_3
@@ -893,13 +891,10 @@ floor5_4
 floor6_1
 floor6_2
 floor7_1
-floor7_2
 f_sky1   = nukage3
 gate3
-gate4
 grass
 mflr8_1
-mflr8_4
 nukage3
 step1
 step2
