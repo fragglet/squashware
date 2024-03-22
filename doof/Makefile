@@ -22,20 +22,22 @@ doof.lzh: staging
 	rm -f $@
 	cd $<; lha -ao5 ../$@ *
 
-check:
+check: doof.img staging
 	rm -rf /tmp/doof-autoinst
 	mkdir /tmp/doof-autoinst
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
 	    dosbox -conf autoinst.cfg
 	[ -e /tmp/doof-autoinst/DOOFINST/FDOOM.CFG ]
 	diff -u ../newdoom1.wad /tmp/doof-autoinst/DOOFINST/DOOM1.WAD
-	diff -u fastdoom/fdoom.exe /tmp/doof-autoinst/DOOFINST/FDOOM.EXE
+	diff -u staging/fdoom.exe /tmp/doof-autoinst/DOOFINST/FDOOM.EXE
 	echo Install worked successfully
 
 staging: $(FASTDOOM_FILES) ../newdoom1.wad
 	rm -rf staging
 	mkdir -p staging/inter
 	cp $(FASTDOOM_FILES) staging/
+	upx -9 staging/fdoom.exe
+	upx -9 staging/fdsetup.exe
 	cp fastdoom/inter/e1.txt staging/inter/
 	cp ../newdoom1.wad staging/doom1.wad
 

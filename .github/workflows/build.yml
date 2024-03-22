@@ -12,7 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt -q install dosbox deutex jlha-utils chocolate-doom
+        sudo apt -q install dosbox deutex jlha-utils chocolate-doom upx
     - name: Find Git version
       id: version
       run: |
