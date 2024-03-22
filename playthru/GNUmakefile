@@ -3,7 +3,8 @@ OUTPUTS = output/13skill1.txt \
           output/45skill1.txt \
           output/67skill1.txt \
           output/8skill1.txt  \
-          output/9skill1.txt
+          output/9skill1.txt  \
+          output/12skill3.txt \
 
 all: check
 
