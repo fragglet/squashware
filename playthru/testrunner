@@ -13,14 +13,23 @@ export SDL_VIDEODRIVER SDL_AUDIODRIVER
 
 demofile=$1; shift
 
+iwad=../newdoom1.wad
+
+# For this one specific demo we instead test the one-level mini-IWAD.
+if [ "$demofile" = "demos/1skill4.lmp" ]; then
+	iwad=../newdoom1_1lev.wad
+fi
+
 # We disable blitting because we're using the SDL dummy backend, but we
 # still draw the screen and simulate sound and music playback, to make
 # sure that everything works correctly. We provide config files that
 # reduce the CPU usage during demo playback.
-$SOURCE_PORT -iwad ../newdoom1.wad \
+$SOURCE_PORT -iwad "$iwad" \
              -timedemo "$demofile" \
              -config ./default.cfg -extraconfig ./choco.cfg \
              -noblit -noautoload -nogui -nograbmouse \
              -statdump $tmp/statdump.txt "$@" >$tmp/log.txt 2>&1 || true
+
+#cat $tmp/log.txt 1>&2
 
 cat $tmp/statdump.txt
