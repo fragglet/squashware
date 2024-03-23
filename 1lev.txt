@@ -30,7 +30,8 @@ DSTELEPT = empty
 DSSTNMOV = empty
 
 # No chainsaw or rocket launcher on E1M1, so we don't need the sound effects.
-DSRLAUNC = empty
+# We use the imp fireball as a "poor man's rocket launcher" sound.
+DSRLAUNC = dsfirsht
 DSSAWFUL = empty
 DSSAWHIT = empty
 DSSAWIDL = empty
@@ -97,16 +98,17 @@ CHGGA0   = empty
 CHGGB0   = empty
 CHGFA0   = empty
 CHGFB0   = empty
-MISLB0   = empty
-MISLC0   = empty
-MISLD0   = empty
 MISGA0   = empty
 MISGB0   = empty
 MISFA0   = empty
 MISFB0   = empty
 MISFC0   = empty
 MISFD0   = empty
-MISLA0   = empty
+
+MISLA0  8       8    = BAL1A0
+MISLB0  8       8    = BAL1B0
+MISLC0  19      18   = BAL1C0
+MISLD0  22      22   = BAL1D0
 
 # Poor man's pickup sprites, we duplicate other items.
 LAUNA0  31      17  = SHOTA0
