@@ -5,6 +5,7 @@ OUTPUTS = output/13skill1.txt \
           output/8skill1.txt  \
           output/9skill1.txt  \
           output/12skill3.txt \
+          output/34skill3.txt \
           output/1skill4.txt
 
 all: check
