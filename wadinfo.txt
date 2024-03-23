@@ -884,7 +884,6 @@ flat14
 flat23
 flat5_4
 floor0_3
-floor3_3
 floor4_6
 floor4_8
 floor5_4
