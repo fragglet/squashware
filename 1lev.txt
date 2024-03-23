@@ -28,12 +28,16 @@ DSDMPAIN = empty
 DSTELEPT = empty
 # No crushers on E1M1:
 DSSTNMOV = empty
-# TODO: Do we want the sounds for rocket launcher, chainsaw?
-# DSRLAUNC
-# DSSAWFUL
-# DSSAWHIT
-# DSSAWIDL
-# DSSAWUP
+
+# No chainsaw or rocket launcher on E1M1, so we don't need the sound effects.
+DSRLAUNC = empty
+DSSAWFUL = empty
+DSSAWHIT = empty
+DSSAWIDL = empty
+DSSAWUP  = empty
+
+# Without a rocket launcher, it should be impossible to gib any monsters.
+DSSLOP   = empty
 
 [musics]
 D_E1M2 = D_E1M1
@@ -84,42 +88,50 @@ BAL7C0 = empty
 BAL7D0 = empty
 BAL7E0 = empty
 
-# TODO: Do we want the weapons that aren't on E1M1?
-# SAWGA0	-75	-113
-# SAWGB0	-75	-113
-# SAWGC0	-68	-79
-# SAWGD0	-67	-79
-# CHGGA0	-113	-117
-# CHGGB0	-115	-119
-# CHGFA0	-118	-98
-# CHGFB0	-120	-97
-# MISLB0	37	29
-# MISLC0	42	34
-# MISLD0	50	43
-# TFOGA0	19	58
-# TFOGB0	19	51
-# TFOGC0	20	45
-# TFOGD0	15	44
-# TFOGE0	8	34
-# TFOGF0	4	30
-# MISGA0	-123	-121
-# MISGB0	-116	-125
-# MISFA0	-136	-105
-# MISFB0	-126	-101
-# MISFC0	-117	-94
-# MISFD0	-112	-81
-# MISLA1  	16	13 = MISLA8A2
-# MISLA8A2	16	13
-# MISLA7A3	16	13 = MISLA8A2
-# MISLA6A4	7	13 = MISLA5
-# MISLA5  	7	13
+# No chainsaw, chaingun or rocket launcher on E1M1.
+SAWGA0   = empty
+SAWGB0   = empty
+SAWGC0   = empty
+SAWGD0   = empty
+CHGGA0   = empty
+CHGGB0   = empty
+CHGFA0   = empty
+CHGFB0   = empty
+MISLB0   = empty
+MISLC0   = empty
+MISLD0   = empty
+MISGA0   = empty
+MISGB0   = empty
+MISFA0   = empty
+MISFB0   = empty
+MISFC0   = empty
+MISFD0   = empty
+MISLA0   = empty
 
+# Poor man's pickup sprites, we duplicate other items.
+LAUNA0  31      17  = SHOTA0
+CSAWA0  31      17  = SHOTA0
+MGUNA0  31      17  = SHOTA0
+ROCKA0  2       11  = CLIPA0
+BROKA0  12      16  = AMMOA0
+
+# No teleporter on E1M1.
+TFOGA0   = empty
+TFOGB0   = empty
+TFOGC0   = empty
+TFOGD0   = empty
+TFOGE0   = empty
+TFOGF0   = empty
+
+# No keys on E1M1.
 BKEYA0    = empty
 BKEYB0    = empty
 YKEYA0    = empty
 YKEYB0    = empty
 RKEYA0    = empty
 RKEYB0    = empty
+
+# None of these other powerups.
 SUITA0    = empty
 PVISA0    = empty
 PVISB0    = empty
@@ -139,13 +151,6 @@ TREDA0    = empty
 TREDB0    = empty
 TREDC0    = empty
 TREDD0    = empty
-
-# TODO: Some of these are only used in multiplayer mode:
-# LAUNA0	31	18
-# CSAWA0	31	23
-# ROCKA0	6	27
-# BROKA0	27	20
-# MGUNA0	25	18
 
 [patches]
 # None of these patches are used in textures used in E1M1:
