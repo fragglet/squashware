@@ -23,11 +23,15 @@ What you might be less likely to notice:
 
 ## But wait, there's more!
 
+![Doom face gets squashed some more](headsquash2.png)
+
 Is a 2MB IWAD file still too large for you? The *silent* version removes
 all the sound effects and is under 1.5MB. Perfect for when running Doom on
 your hair dryer which doesn't have a speaker anyway.
 
-But wait, there's more!
+## But wait, there's more!
+
+![Doom face gets squashed even more](headsquash3.png)
 
 Is a 1.5MB IWAD file still too large for you? The *1-level* version
 removes all except the first level of the game, and is under 800KB.
