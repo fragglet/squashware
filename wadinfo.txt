@@ -891,6 +891,7 @@ floor5_4
 floor6_1
 floor6_2
 floor7_1
+floor7_2
 f_sky1   = nukage3
 gate3
 grass
