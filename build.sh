@@ -41,6 +41,7 @@ if wadptr -version >/dev/null; then
     wadptr -wipesides -q -c newdoom1.wad
     wadptr -wipesides -q -c newdoom1_silent.wad
     wadptr -wipesides -q -c newdoom1_1lev.wad
+    wadptr -wipesides -q -c newdoom1_1lev_nosound.wad
 else
     echo "wadptr not installed; can't compress WAD."
 fi
