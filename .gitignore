@@ -1,7 +1,9 @@
 prefixes
+kernel.wad
 newdoom1.wad
 newdoom1.zip
 newdoom1_silent.wad
 newdoom1_1lev.wad
-silent.wad
+newdoom1_1lev_nosound.wad
 1lev.wad
+1lev_sounds.wad
