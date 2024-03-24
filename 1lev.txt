@@ -89,26 +89,32 @@ BAL7C0 = empty
 BAL7D0 = empty
 BAL7E0 = empty
 
-# No chainsaw, chaingun or rocket launcher on E1M1.
-SAWGA0   = empty
-SAWGB0   = empty
-SAWGC0   = empty
-SAWGD0   = empty
-CHGGA0   = empty
-CHGGB0   = empty
-CHGFA0   = empty
-CHGFB0   = empty
-MISGA0   = empty
-MISGB0   = empty
-MISFA0   = empty
-MISFB0   = empty
-MISFC0   = empty
-MISFD0   = empty
+# Poor man's chainsaw is just the shotgun sprite.
+SAWGA0	-121	-108  = SHTGA0
+SAWGB0	-121	-108  = SHTGA0
+SAWGC0	-121	-108  = SHTGA0
+SAWGD0	-121	-108  = SHTGA0
 
+# Chaingun too.
+CHGGA0	-121	-108  = SHTGA0
+CHGGB0	-121	-108  = SHTGA0
+CHGFA0	-141	-95   = SHTFA0
+CHGFB0	-136	-86   = SHTFB0
+
+# We use the imp fireball as a poor man's rocket.
 MISLA0  8       8    = BAL1A0
 MISLB0  8       8    = BAL1B0
 MISLC0  19      18   = BAL1C0
 MISLD0  22      22   = BAL1D0
+
+# Poor man's rocket launcher is the player's hand ... it matches
+# with the rocket being an imp fireball :)
+MISGA0   = empty
+MISGB0	-151	-126  = PUNGA0
+MISFA0   = empty
+MISFB0   = empty
+MISFC0   = empty
+MISFD0   = empty
 
 # Poor man's pickup sprites, we duplicate other items.
 LAUNA0  31      17  = SHOTA0
