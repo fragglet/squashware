@@ -364,7 +364,6 @@ floor4_8
 floor5_4
 floor7_1
 floor7_2
-mflr8_1
 nukage3
 tlite6_4
 tlite6_6

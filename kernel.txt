@@ -499,26 +499,6 @@ tech01  	= bigdoor2
 tech04  	= bigdoor2
 
 [flats]
-ceil3_2 		= nukage3
-ceil5_1 		= nukage3
-flat14  		= nukage3
-flat23  		= nukage3
-flat5_4 		= nukage3
-floor0_3		= nukage3
-floor4_6		= nukage3
-floor4_8		= nukage3
-floor5_4		= nukage3
-floor6_1		= nukage3
-floor6_2		= nukage3
-floor7_1		= nukage3
-floor7_2		= nukage3
-f_sky1  		= nukage3
-gate3   		= nukage3
-grass   		= nukage3
-mflr8_1 		= nukage3
-nukage3
-step1   		= nukage3
-step2   		= nukage3
-tlite6_4		= nukage3
-tlite6_6		= nukage3
+f_sky1 = mflr8_1
+mflr8_1   # Used for background when not running fullscreen.
 
