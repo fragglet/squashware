@@ -455,6 +455,8 @@ PLAYV0    = empty
 PLAYW0    = empty
 
 [patches]
+# TODO: These shouldn't really be in the kernel; they're only here
+# because TEXTURE1 references them.
 ash01   	= bigdoor2
 bigdoor2
 bigdoor6	= bigdoor2
