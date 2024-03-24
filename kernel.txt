@@ -22,18 +22,19 @@ TEXTURE1
 
 [sounds]
 # You could theoretically make an IWAD with just these...
-DSBAREXP   = empty
-DSOOF      = empty
-DSPISTOL   = empty
-DSPLPAIN   = empty
+DSPLPAIN   = empty # Player sounds
 DSPDIEHI   = empty
-DSTINK     = empty
-DSSWTCHN   = empty
-DSSWTCHX   = empty
+DSOOF      = empty
 DSNOWAY    = empty
-DSSTNMOV   = empty
+DSTINK     = empty # Multiplayer message received
+DSSWTCHN   = empty # Switch sounds used in menu
+DSSWTCHX   = empty
+DSSTNMOV   = empty # Used when resizing the screen
+DSPUNCH    = empty # Default weapons
+DSPISTOL   = empty
+DSBAREXP   = empty # Used in intermission
 
-# Needed for game exit:
+# Played randomly at game exit:
 DSPLDETH   = empty
 DSDMPAIN   = empty
 DSPOPAIN   = empty
@@ -66,7 +67,6 @@ DSPOSACT   = empty
 DSPOSIT2   = empty
 DSPSTART   = empty
 DSPSTOP    = empty
-DSPUNCH    = empty
 DSRLAUNC   = empty
 DSSAWFUL   = empty
 DSSAWHIT   = empty
