@@ -502,5 +502,6 @@ tech04  	= bigdoor2
 
 [flats]
 f_sky1 = mflr8_1
-mflr8_1   # Used for background when not running fullscreen.
+floor4_8 = mflr8_1 # Used for text screen at end of E1.
+mflr8_1            # Used for background when not running fullscreen.
 
