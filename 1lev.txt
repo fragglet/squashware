@@ -1,7 +1,9 @@
 # deutex config for building the 1-level IWAD. This gets applied on top of
-# the basic IWAD but all levels get replaced with E1M1 and all monsters,
-# textures and sprites not used on E1M1 are removed.
+# the kernel IWAD to add minimal resources just needed for E1M1.
+
 [levels]
+# We reuse E1M1 for every level.
+E1M1
 E1M2 = E1M1
 E1M3 = E1M1
 E1M4 = E1M1
@@ -11,83 +13,44 @@ E1M7 = E1M1
 E1M8 = E1M1
 E1M9 = E1M1
 
+[graphics]
+WILV00	0	-6
+WILV01	0	-6  = WILV00
+WILV02	0	-6  = WILV00
+WILV03	0	-6  = WILV00
+WILV04	0	-6  = WILV00
+WILV05	0	-6  = WILV00
+WILV06	0	-6  = WILV00
+WILV07	0	-6  = WILV00
+WILV08	0	-6  = WILV00
+
 [lumps]
 DEMO1 = e1m1demo
 DEMO2 = e1m1demo
 DEMO3 = e1m1demo
 
-[sounds]
-# No pinky demon or baron:
-DSSGTATK = empty
-DSSGTDTH = empty
-DSSGTSIT = empty
-DSBRSDTH = empty
-DSBRSSIT = empty
-DSDMPAIN = empty
-# There are no teleporters on E1M1:
-DSTELEPT = empty
-# No crushers on E1M1:
-DSSTNMOV = empty
-
-# No chainsaw or rocket launcher on E1M1, so we don't need the sound effects.
-# We use the imp fireball as a "poor man's rocket launcher" sound.
-DSRLAUNC = dsfirsht
-DSSAWFUL = empty
-DSSAWHIT = empty
-DSSAWIDL = empty
-DSSAWUP  = empty
-
-# Without a rocket launcher, it should be impossible to gib any monsters.
-DSSLOP   = empty
-
-[musics]
-D_E1M2 = D_E1M1
-D_E1M3 = D_E1M1
-D_E1M4 = D_E1M1
-D_E1M5 = D_E1M1
-D_E1M6 = D_E1M1
-D_E1M7 = D_E1M1
-D_E1M8 = D_E1M1
-D_E1M9 = D_E1M1
-D_INTRO = D_INTROA
-D_VICTOR = D_INTER
-
 [sprites]
-# No pinky demon or baron on E1M1:
-SARGA0 = empty
-SARGB0 = empty
-SARGC0 = empty
-SARGD0 = empty
-SARGE0 = empty
-SARGF0 = empty
-SARGG0 = empty
-SARGH0 = empty
-SARGI0 = empty
-SARGJ0 = empty
-SARGK0 = empty
-SARGL0 = empty
-SARGM0 = empty
-SARGN0 = empty
-BOSSA0 = empty
-BOSSB0 = empty
-BOSSC0 = empty
-BOSSD0 = empty
-BOSSE0 = empty
-BOSSF0 = empty
-BOSSG0 = empty
-BOSSH0 = empty
-BOSSI0 = empty
-BOSSJ0 = empty
-BOSSK0 = empty
-BOSSL0 = empty
-BOSSM0 = empty
-BOSSN0 = empty
-BOSSO0 = empty
-BAL7A0 = empty
-BAL7B0 = empty
-BAL7C0 = empty
-BAL7D0 = empty
-BAL7E0 = empty
+
+BAL1A0	8	8
+BAL1B0	8	8
+BAL1C0	19	18
+BAL1D0	22	22
+BAL1E0	25	24
+PUFFA0	2	3
+PUFFB0	4	4
+PUFFC0	6	5
+PUFFD0	8	7
+BLUDA0	2	3
+BLUDB0	4	4
+BLUDC0	6	6
+
+# Shotgun
+SHTGA0	-121	-108
+SHTGB0	-63	-77
+SHTGC0	-30	-47
+SHTGD0	-29	-67
+SHTFA0	-141	-95
+SHTFB0	-136	-86
 
 # Poor man's chainsaw is just the shotgun sprite.
 SAWGA0	-121	-108  = SHTGA0
@@ -123,86 +86,286 @@ MGUNA0  31      17  = SHOTA0
 ROCKA0  2       11  = CLIPA0
 BROKA0  12      16  = AMMOA0
 
-# No teleporter on E1M1.
-TFOGA0   = empty
-TFOGB0   = empty
-TFOGC0   = empty
-TFOGD0   = empty
-TFOGE0   = empty
-TFOGF0   = empty
+# Imp
+TROOA1C1	19	52
+TROOA2A8	17	50
+TROOA3A7	17	50 = TROOA2A8
+TROOA4A6	21	44 = TROOA5C5
+TROOA5C5	21	44
+TROOB1D1	17	51
+TROOB2B8	13	52
+TROOB3B7	13	52 = TROOB2B8
+TROOB4B6	20	41 = TROOB5D5
+TROOB5D5	20	41
+TROOC2C8	17	50 = TROOA2A8
+TROOC3C7	17	50 = TROOA2A8
+TROOC4C6	21	44 = TROOA5C5
+TROOD2D8	13	52 = TROOB2B8
+TROOD3D7	13	52 = TROOB2B8
+TROOD4D6	20	41 = TROOB5D5
+TROOE1  	30	55
+TROOE2E8	11	51
+TROOE3E7	11	51 = TROOE2E8
+TROOE4E6	17	43 = TROOE5
+TROOE5  	17	43
+TROOF1  	18	50
+TROOF2F8	25	49
+TROOF3F7	25	49 = TROOF2F8
+TROOF4F6	12	41 = TROOF5
+TROOF5  	12	41
+TROOG1  	5	50
+TROOG2G8	25	50
+TROOG3G7	25	50 = TROOG2G8
+TROOG4G6	16	44 = TROOG5
+TROOG5  	16	44
+TROOH1  	18	50
+TROOH2H8	6	51
+TROOH3H7	6	51 = TROOH2H8
+TROOH4H6	21	52 = TROOH5
+TROOH5  	21	52
+TROOI0	22	57
+TROOJ0	21	54
+TROOK0	18	54
+TROOL0	23	45
+TROOM0	29	19
+TROON0	18	59 = POSSN0
+TROOO0	21	58 = POSSO0
+TROOP0	24	52 = POSSP0
+TROOQ0	23	47 = POSSQ0
+TROOR0	24	39 = POSSR0
+TROOS0	24	32 = POSSS0
+TROOT0	24	17 = POSSU0
+TROOU0	24	17 = POSSU0
 
-# No keys on E1M1.
-BKEYA0    = empty
-BKEYB0    = empty
-YKEYA0    = empty
-YKEYB0    = empty
-RKEYA0    = empty
-RKEYB0    = empty
+# Zombieman
+POSSA1	18	50
+POSSA2A8	17	50
+POSSA3A7	17	50 = POSSA2A8
+POSSA4A6	21	47 = POSSA5
+POSSA5  	21	47
+POSSB1  	19	52
+POSSB2B8	18	51
+POSSB3B7	18	51 = POSSB2B8
+POSSB4B6	18	51 = POSSB5
+POSSB5  	18	51
+POSSC1  	18	50 = POSSA1
+POSSC2C8	17	50 = POSSA2A8
+POSSC3C7	17	50 = POSSA2A8
+POSSC4C6	21	47 = POSSA5
+POSSC5  	21	47 = POSSA5
+POSSD1  	19	52 = POSSB1
+POSSD2D8	18	51 = POSSB2B8
+POSSD3D7	18	51 = POSSB2B8
+POSSD4D6	18	51 = POSSB5
+POSSD5  	18	51 = POSSB5
+POSSE1  	13	50
+POSSE2E8	25	50
+POSSE3E7	25	50 = POSSE2E8
+POSSE4E6	11	47 = POSSE5
+POSSE5  	11	47
+POSSF1  	14	50
+POSSF2F8	27	50
+POSSF3F7	27	50 = POSSF2F8
+POSSF4F6	10	47 = POSSF5
+POSSF5  	10	47
+POSSG1  	20	52
+POSSG2G8	19	53
+POSSG3G7	19	53 = POSSG2G8
+POSSG4G6	16	49 = POSSG5
+POSSG5  	16	49
+POSSH0	19	52
+POSSI0	16	47
+POSSJ0	22	42
+POSSK0	23	29
+POSSL0	22	12
+POSSM0	19	56
+POSSN0	18	59
+POSSO0	21	58
+POSSP0	24	52
+POSSQ0	23	47
+POSSR0	24	39
+POSSS0	24	32
+POSST0	24	17  = POSSU0
+POSSU0	24	17
 
-# None of these other powerups.
-SUITA0    = empty
-PVISA0    = empty
-PVISB0    = empty
-PMAPA0    = empty
-PMAPB0    = empty
-PMAPC0    = empty
-PMAPD0    = empty
-PINSA0    = empty
-PINSB0    = empty
-PINSC0    = empty
-PINSD0    = empty
-SOULA0    = empty
-SOULB0    = empty
-SOULC0    = empty
-SOULD0    = empty
-TREDA0    = empty
-TREDB0    = empty
-TREDC0    = empty
-TREDD0    = empty
+# We're only targeting single player, so we don't include the PLAY*
+# sprites. But we can reuse the zombie trooper sprites to make multiplayer
+# at least nominally playable (with hair color to identify player!)
+PLAYA1  	18	50 = POSSA1
+PLAYA2A8	17	50 = POSSA2A8
+PLAYA3A7	17	50 = POSSA2A8
+PLAYA4A6	21	47 = POSSA5
+PLAYA5  	21	47 = POSSA5
+PLAYB1  	19	52 = POSSB1
+PLAYB2B8	18	51 = POSSB2B8
+PLAYB3B7	18	51 = POSSB2B8
+PLAYB4B6	18	51 = POSSB5
+PLAYB5  	18	51 = POSSB5
+PLAYC1  	18	50 = POSSA1
+PLAYC2C8	17	50 = POSSA2A8
+PLAYC3C7	17	50 = POSSA2A8
+PLAYC4C6	21	47 = POSSA5
+PLAYC5  	21	47 = POSSA5
+PLAYD1  	19	52 = POSSB1
+PLAYD2D8	18	51 = POSSB2B8
+PLAYD3D7	18	51 = POSSB2B8
+PLAYD4D6	18	51 = POSSB5
+PLAYD5  	18	51 = POSSB5
+PLAYE1  	13	50 = POSSE1
+PLAYE2E8	25	50 = POSSE2E8
+PLAYE3E7	25	50 = POSSE2E8
+PLAYE4E6	11	47 = POSSE5
+PLAYE5  	11	47 = POSSE5
+PLAYF1  	14	50 = POSSF1
+PLAYF2F8	27	50 = POSSF2F8
+PLAYF3F7	27	50 = POSSF2F8
+PLAYF4F6	10	47 = POSSF5
+PLAYF5  	10	47 = POSSF5
+PLAYG1  	20	52 = POSSG1
+PLAYG2G8	19	53 = POSSG2G8
+PLAYG3G7	19	53 = POSSG2G8
+PLAYG4G6	16	49 = POSSG5
+PLAYG5  	16	49 = POSSG5
+PLAYH0  	19	52 = POSSH0
+PLAYI0  	16	47 = POSSI0
+PLAYJ0  	22	42 = POSSJ0
+PLAYK0  	23	29 = POSSK0
+PLAYL0  	22	12 = POSSL0 ; player has two extra death frames
+PLAYM0  	22	12 = POSSL0
+PLAYN0  	22	12 = POSSL0
+PLAYO0  	19	56 = POSSM0
+PLAYP0  	18	59 = POSSN0
+PLAYQ0  	21	58 = POSSO0
+PLAYR0  	24	52 = POSSP0
+PLAYS0  	23	47 = POSSQ0
+PLAYT0  	24	39 = POSSR0
+PLAYU0  	24	32 = POSSS0
+PLAYV0  	24	17 = POSSU0
+PLAYW0  	24	17 = POSSU0
+
+# Sergeant
+SPOSA1  	18	50
+SPOSA2A8	13	50
+SPOSA3A7	13	50 = SPOSA2A8
+SPOSA4A6	20	47 = SPOSA5
+SPOSA5  	20	47
+SPOSB1  	19	52
+SPOSB2B8	12	51
+SPOSB3B7	12	51 = SPOSB2B8
+SPOSB4B6	17	51 = SPOSB5
+SPOSB5  	17	51
+SPOSC1  	18	50 = SPOSA1
+SPOSC2C8	13	50 = SPOSA2A8
+SPOSC3C7	13	50 = SPOSA2A8
+SPOSC4C6	20	47 = SPOSA5
+SPOSC5  	20	47 = SPOSA5
+SPOSD1  	19	52 = SPOSB1
+SPOSD2D8	12	51 = SPOSB2B8
+SPOSD3D7	12	51 = SPOSB2B8
+SPOSD4D6	17	51 = SPOSB5
+SPOSD5  	17	51 = SPOSB5
+SPOSE1  	13	50
+SPOSE2E8	21	50
+SPOSE3E7	21	50 = SPOSE2E8
+SPOSE4E6	11	47 = SPOSE5
+SPOSE5  	11	47
+SPOSF1  	14	50
+SPOSF2F8	25	50
+SPOSF3F7	25	50 = SPOSF2F8
+SPOSF4F6	10	47 = SPOSF5
+SPOSF5  	10	47
+SPOSG1  	12	52
+SPOSG2G8	16	52
+SPOSG3G7	16	52 = SPOSG2G8
+SPOSG4G6	16	49 = SPOSG5
+SPOSG5  	16	49
+SPOSH0	14	57
+SPOSI0	16	51
+SPOSJ0	22	43
+SPOSK0	23	29
+SPOSL0	24	12
+SPOSM0	14	56
+SPOSN0	18	59 = POSSN0
+SPOSO0	21	58 = POSSO0
+SPOSP0	24	52 = POSSP0
+SPOSQ0	23	47 = POSSQ0
+SPOSR0	24	39 = POSSR0
+SPOSS0	24	32 = POSSS0
+SPOST0	24	17 = POSSU0
+SPOSU0	24	17 = POSSU0
+
+# Exploding barrel
+BAR1A0	10	28
+BAR1B0	10	28 = BAR1A0
+BEXPA0	10	28 = BAR1A0
+BEXPB0	10	27
+BEXPC0	19	32
+BEXPD0	27	46
+BEXPE0	29	49
+
+# Decorations
+POL5A0	30	5
+CANDA0	8	15
+CBRAA0	15	57
+
+# Items and powerups
+SHOTA0	31	17
+CLIPA0	2	11
+SHELA0	5	7
+STIMA0	7	15
+MEDIA0	13	19
+ARM1A0	15	17
+ARM1B0	15	17 = ARM1A0
+ARM2A0	15	17
+ARM2B0	15	17 = ARM2A0
+COLUA0	9	43
+BPAKA0	8	25
+AMMOA0	12	16
+SBOXA0	16	12
+BON1A0	7	14 = BON1D0
+BON1B0	7	14 = BON1D0
+BON1C0	7	14 = BON1D0
+BON1D0	7	14
+BON2A0	7	13 = BON2D0
+BON2B0	7	13 = BON2D0
+BON2C0	7	13 = BON2D0
+BON2D0	7	13
 
 [patches]
-# None of these patches are used in textures used in E1M1:
-ash01     = bigdoor2
-bigdoor6  = bigdoor2
-brick01   = bigdoor2
-brick02   = bigdoor2
-brick03   = bigdoor2
-cement01  = bigdoor2
-door1     = bigdoor2
-doorblu   = bigdoor2
-doorred   = bigdoor2
-dooryel   = bigdoor2
-gray5     = bigdoor2
-litestrp  = bigdoor2
-metal1    = bigdoor2
-metal     = bigdoor2
-pipe2     = bigdoor2
-plat1     = bigdoor2
-ps20a0    = bigdoor2
-shawn2    = bigdoor2
-sladwall  = bigdoor2
-support3  = bigdoor2
-tech01    = bigdoor2
-tech04    = bigdoor2
-
-[graphics]
-WILV01	0	-6  = WILV00
-WILV02	0	-6  = WILV00
-WILV03	0	-6  = WILV00
-WILV04	0	-6  = WILV00
-WILV05	0	-6  = WILV00
-WILV06	0	-6  = WILV00
-WILV07	0	-6  = WILV00
-WILV08	0	-6  = WILV00
+# Only the patches used in textures on E1M1:
+bigdoor2
+brown1
+compspan
+comptall
+compscrn
+ct2panel
+door3
+doorstop
+doortrak
+exitdoor
+exitsign
+lite5
+nuke24
+sky1
+step6
+stwar01
+stwar02
+support2
+sw3s0
+sw3s1
 
 [flats]
-# None of these flats are used in E1M1:
-ceil3_2 = nukage3
-floor0_3 = nukage3
-floor4_6 = nukage3
-floor6_1 = nukage3
-floor6_2 = nukage3
-gate3 = nukage3
-grass = nukage3
-step1 = nukage3
-step2 = nukage3
+# Only the flats used on E1M1.
+ceil5_1
+flat14
+flat23
+flat5_4
+floor4_8
+floor5_4
+floor7_1
+floor7_2
+mflr8_1
+nukage3
+tlite6_4
+tlite6_6
+
