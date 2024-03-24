@@ -34,6 +34,7 @@ DSSGCOCK
 DSSHOTGN
 DSSWTCHN
 DSSWTCHX
+DSSTNMOV
 DSWPNUP = dssgcock
 
 # We use the imp fireball as a "poor man's rocket launcher" sound.
