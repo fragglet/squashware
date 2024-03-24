@@ -1,0 +1,42 @@
+# sounds.wad adds remaining sounds and music not added in 1lev_sounds.wad
+
+[sounds]
+
+# Baron
+DSBRSDTH
+DSBRSSIT
+
+# Pinky demon
+DSDMACT = empty
+DSDMPAIN
+DSSGTATK
+DSSGTDTH
+DSSGTSIT
+
+# Rocket launcher
+DSRLAUNC
+
+# Chainsaw
+DSSAWFUL
+DSSAWHIT
+DSSAWIDL
+DSSAWUP
+
+# No gib sound in 1lev because there's no rocket launcher
+DSSLOP
+
+DSTELEPT
+
+# List of Musics
+[musics]
+D_E1M1
+D_E1M2
+D_E1M3
+D_E1M4
+D_E1M5
+D_E1M6
+D_E1M7
+D_E1M8
+D_E1M9
+D_VICTOR
+

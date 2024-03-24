@@ -5,8 +5,8 @@ set -eu -o pipefail
 rm -f kernel.wad \
       newdoom1_1lev_nosound.wad 1lev.wad \
       newdoom1_1lev.wad 1lev_sounds.wad \
-      newdoom1_silent.wad silent.wad \
-      newdoom1.wad
+      newdoom1_silent.wad sounds.wad \
+      newdoom1.wad main.wad
 
 if ! deutex -version >/dev/null; then
     echo "deutex not installed."
@@ -24,13 +24,16 @@ cp newdoom1_1lev_nosound.wad newdoom1_1lev.wad
 deutex -doom2 bootstrap/ -build 1lev_sounds.txt 1lev_sounds.wad
 deutex -doom2 bootstrap/ -join newdoom1_1lev.wad 1lev_sounds.wad
 
-# IWAD
-deutex -doom2 bootstrap/ -iwad -build wadinfo.txt newdoom1.wad
-
 # Silent WAD
-deutex -doom2 bootstrap/ -build silent.txt silent.wad
-cp newdoom1.wad newdoom1_silent.wad
-deutex -doom2 bootstrap/ -join newdoom1_silent.wad silent.wad
+deutex -doom2 bootstrap/ -build main.txt main.wad
+cp newdoom1_1lev_nosound.wad newdoom1_silent.wad
+deutex -doom2 bootstrap/ -join newdoom1_silent.wad main.wad
+
+# Full WAD
+deutex -doom2 bootstrap/ -build sounds.txt sounds.wad
+cp newdoom1_silent.wad newdoom1.wad
+deutex -doom2 bootstrap/ -join newdoom1.wad 1lev_sounds.wad
+deutex -doom2 bootstrap/ -join newdoom1.wad sounds.wad
 
 # TODO: We should strip the _DEUTEX_ lump that deutex leaves behind.
 
