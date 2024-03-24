@@ -90,6 +90,8 @@ D_E1M7     = empty
 D_E1M8     = empty
 D_E1M9     = empty
 D_INTRO    = empty
+D_INTROA   = empty
+D_INTER    = empty
 D_VICTOR   = empty
 
 [graphics]
