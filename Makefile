@@ -61,6 +61,8 @@ doof: $(WADS)
 	make -C doof
 
 clean:
+	make -C playthru clean
+	make -C doof clean
 	rm -f $(WADS) \
 	      kernel.wad 1lev.wad 1lev_sounds.wad \
 	      sounds.wad main.wad
