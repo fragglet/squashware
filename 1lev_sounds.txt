@@ -3,30 +3,30 @@
 [sounds]
 # A minimal set of sound effects, just those needed for E1M1.
 DSBAREXP
-DSBGDTH1 = dsbgdth2
+DSBGDTH1	= dsbgdth2
 DSBGDTH2
 DSBGSIT1
-DSBGSIT2 = dsbgsit1
+DSBGSIT2	= dsbgsit1
 DSCLAW
 DSDORCLS
 DSDOROPN
 DSFIRSHT
 DSFIRXPL
-DSGETPOW = dsitemup
+DSGETPOW	= dsitemup
 DSITEMUP
-DSNOWAY = dsoof
+DSNOWAY 	= dsoof
 DSOOF
-DSPDIEHI = dspldeth
+DSPDIEHI	= dspldeth
 DSPISTOL
 DSPLDETH
 DSPLPAIN
-DSPODTH1 = dspodth2
+DSPODTH1	= dspodth2
 DSPODTH2
-DSPODTH3 = dspodth2
+DSPODTH3	= dspodth2
 DSPOPAIN
 DSPOSIT1
-DSPOSIT2 = dsposit1
-DSPOSIT3 = dsposit1
+DSPOSIT2	= dsposit1
+DSPOSIT3	= dsposit1
 DSPSTART
 DSPSTOP
 DSPUNCH
@@ -35,22 +35,22 @@ DSSHOTGN
 DSSWTCHN
 DSSWTCHX
 DSSTNMOV
-DSWPNUP = dssgcock
+DSWPNUP 	= dssgcock
 
 # We use the imp fireball as a "poor man's rocket launcher" sound.
-DSRLAUNC = dsfirsht
+DSRLAUNC	= dsfirsht
 
 [musics]
 D_E1M1
-D_E1M2   = D_E1M1
-D_E1M3   = D_E1M1
-D_E1M4   = D_E1M1
-D_E1M5   = D_E1M1
-D_E1M6   = D_E1M1
-D_E1M7   = D_E1M1
-D_E1M8   = D_E1M1
-D_E1M9   = D_E1M1
+D_E1M2  	= D_E1M1
+D_E1M3  	= D_E1M1
+D_E1M4  	= D_E1M1
+D_E1M5  	= D_E1M1
+D_E1M6  	= D_E1M1
+D_E1M7  	= D_E1M1
+D_E1M8  	= D_E1M1
+D_E1M9  	= D_E1M1
 D_INTER
-D_INTRO  = D_INTROA
+D_INTRO 	= D_INTROA
 D_INTROA
-D_VICTOR = D_INTER
+D_VICTOR	= D_INTER

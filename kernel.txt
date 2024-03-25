@@ -9,9 +9,9 @@ E1M1
 PLAYPAL
 COLORMAP
 ENDOOM
-DEMO1 = e1m1demo
-DEMO2 = e1m1demo
-DEMO3 = e1m1demo
+DEMO1   	= e1m1demo
+DEMO2   	= e1m1demo
+DEMO3   	= e1m1demo
 GENMIDI
 DMXGUS
 
@@ -22,77 +22,77 @@ TEXTURE1
 
 [sounds]
 # You could theoretically make an IWAD with just these...
-DSPLPAIN   = empty # Player sounds
-DSPDIEHI   = empty
-DSOOF      = empty
-DSNOWAY    = empty
-DSTINK     = empty # Multiplayer message received
-DSSWTCHN   = empty # Switch sounds used in menu
-DSSWTCHX   = empty
-DSSTNMOV   = empty # Used when resizing the screen
-DSPUNCH    = empty # Default weapons
-DSPISTOL   = empty
-DSBAREXP   = empty # Used in intermission
+DSPLPAIN	= empty # Player sounds
+DSPDIEHI	= empty
+DSOOF   	= empty
+DSNOWAY 	= empty
+DSTINK  	= empty # Multiplayer message received
+DSSWTCHN	= empty # Switch sounds used in menu
+DSSWTCHX	= empty
+DSSTNMOV	= empty # Used when resizing the screen
+DSPUNCH 	= empty # Default weapons
+DSPISTOL	= empty
+DSBAREXP	= empty # Used in intermission
 
 # Played randomly at game exit:
-DSPLDETH   = empty
-DSDMPAIN   = empty
-DSPOPAIN   = empty
-DSSLOP     = empty
-DSTELEPT   = empty
-DSPOSIT1   = empty
-DSPOSIT3   = empty
+DSPLDETH	= empty
+DSDMPAIN	= empty
+DSPOPAIN	= empty
+DSSLOP  	= empty
+DSTELEPT	= empty
+DSPOSIT1	= empty
+DSPOSIT3	= empty
 
 # But in practice you probably need these too.
-DSWPNUP    = empty  # Weapon pickup
-DSGETPOW   = empty  # Item pickup
-DSITEMUP   = empty
-DSITMBK    = empty  # Multiplayer item respawn
-DSPODTH1   = empty  # Zombies
-DSPODTH2   = empty
-DSPODTH3   = empty
-DSPOSACT   = empty
-DSPOSIT2   = empty
-DSBGACT    = empty  # Imp
-DSBGDTH1   = empty
-DSBGDTH2   = empty
-DSBGSIT1   = empty
-DSBGSIT2   = empty
-DSCLAW     = empty
-DSFIRSHT   = empty
-DSFIRXPL   = empty
-DSSGTATK   = empty  # Pinky demon
-DSSGTDTH   = empty
-DSSGTSIT   = empty
-DSDMACT    = empty
-DSBRSDTH   = empty  # Baron
-DSBRSSIT   = empty
-DSDORCLS   = empty  # Door
-DSDOROPN   = empty
-DSPSTART   = empty  # Moving platforms
-DSPSTOP    = empty
-DSSGCOCK   = empty  # Shotgun
-DSSHOTGN   = empty
-DSRLAUNC   = empty  # Rocket launcher
-DSSAWFUL   = empty  # Chainsaw
-DSSAWHIT   = empty
-DSSAWIDL   = empty
-DSSAWUP    = empty
+DSWPNUP 	= empty  # Weapon pickup
+DSGETPOW	= empty  # Item pickup
+DSITEMUP	= empty
+DSITMBK 	= empty  # Multiplayer item respawn
+DSPODTH1	= empty  # Zombies
+DSPODTH2	= empty
+DSPODTH3	= empty
+DSPOSACT	= empty
+DSPOSIT2	= empty
+DSBGACT 	= empty  # Imp
+DSBGDTH1	= empty
+DSBGDTH2	= empty
+DSBGSIT1	= empty
+DSBGSIT2	= empty
+DSCLAW  	= empty
+DSFIRSHT	= empty
+DSFIRXPL	= empty
+DSSGTATK	= empty  # Pinky demon
+DSSGTDTH	= empty
+DSSGTSIT	= empty
+DSDMACT 	= empty
+DSBRSDTH	= empty  # Baron
+DSBRSSIT	= empty
+DSDORCLS	= empty  # Door
+DSDOROPN	= empty
+DSPSTART	= empty  # Moving platforms
+DSPSTOP 	= empty
+DSSGCOCK	= empty  # Shotgun
+DSSHOTGN	= empty
+DSRLAUNC	= empty  # Rocket launcher
+DSSAWFUL	= empty  # Chainsaw
+DSSAWHIT	= empty
+DSSAWIDL	= empty
+DSSAWUP 	= empty
 
 [musics]
-D_E1M1     = empty
-D_E1M2     = empty
-D_E1M3     = empty
-D_E1M4     = empty
-D_E1M5     = empty
-D_E1M6     = empty
-D_E1M7     = empty
-D_E1M8     = empty
-D_E1M9     = empty
-D_INTRO    = empty
-D_INTROA   = empty
-D_INTER    = empty
-D_VICTOR   = empty
+D_E1M1  	= empty
+D_E1M2  	= empty
+D_E1M3  	= empty
+D_E1M4  	= empty
+D_E1M5  	= empty
+D_E1M6  	= empty
+D_E1M7  	= empty
+D_E1M8  	= empty
+D_E1M9  	= empty
+D_INTRO 	= empty
+D_INTROA	= empty
+D_INTER 	= empty
+D_VICTOR	= empty
 
 [graphics]
 HELP1   			= TITLEPIC
@@ -145,11 +145,11 @@ STYSNUM9
 STKEYS0 	0	-1
 STKEYS1 	0	-1
 STKEYS2 	0	-1
-STKEYS3 	0	-1 = STKEYS0
-STKEYS4 	0	-1 = STKEYS1
-STKEYS5 	0	-1 = STKEYS2
-STDISK = empty
-STCDROM = empty
+STKEYS3 	0	-1	= STKEYS0
+STKEYS4 	0	-1	= STKEYS1
+STKEYS5 	0	-1	= STKEYS2
+STDISK  			= empty
+STCDROM 			= empty
 STARMS  	96	-2
 STCFN033
 STCFN034
@@ -215,14 +215,14 @@ STCFN093
 STCFN094
 STCFN095	0	-4
 STCFN121
-STFB1 = empty
-STFB0 = empty
-STFB2 = empty
-STFB3 = empty
-STPB1 = empty
-STPB0 = empty
-STPB2 = empty
-STPB3 = empty
+STFB1   			= empty
+STFB0   			= empty
+STFB2   			= empty
+STFB3   			= empty
+STPB1   			= empty
+STPB0   			= empty
+STPB2   			= empty
+STPB3   			= empty
 STFST01 	-5	-2
 STFST00 	-5	-2
 STFST02 	-5	-2
@@ -271,7 +271,7 @@ M_OPTION
 M_QUITG
 M_NGAME
 M_SKULL1	-17	-5
-M_SKULL2 = empty
+M_SKULL2			= empty
 M_THERMO	-2	4
 M_THERMR	0	5
 M_THERMM	0	5
@@ -397,62 +397,62 @@ WISCRT2
 WIENTER 	0	-4
 
 [sprites]
-PISGA0	-126	-106
-PISGB0	-122	-96
-PISGC0	-128	-97
-PISGD0	-129	-97
-PISGE0	-119	-95
-PISFA0	-140	-76
-PUFFA0	2	3
-PUFFB0	4	4
-PUFFC0	6	5
-PUFFD0	8	7
-BLUDA0	2	3
-BLUDB0	4	4
-BLUDC0	6	6
-TFOGA0 = empty
-TFOGB0 = empty
-TFOGC0 = empty
-TFOGD0 = empty
-TFOGE0 = empty
-TFOGF0 = empty
-TFOGG0 = empty
-TFOGH0 = empty
-TFOGI0 = empty
-TFOGJ0 = empty
-IFOGA0 = empty
-IFOGB0 = empty
-IFOGC0 = empty
-IFOGD0 = empty
-IFOGE0 = empty
-PUNGA0	-151	-126
-PUNGB0	-67	-127
-PUNGC0	-52	-116
-PUNGD0	-36	-92
+PISGA0  	-126	-106
+PISGB0  	-122	-96
+PISGC0  	-128	-97
+PISGD0  	-129	-97
+PISGE0  	-119	-95
+PISFA0  	-140	-76
+PUFFA0  	2	3
+PUFFB0  	4	4
+PUFFC0  	6	5
+PUFFD0  	8	7
+BLUDA0  	2	3
+BLUDB0  	4	4
+BLUDC0  	6	6
+TFOGA0  			= empty
+TFOGB0  			= empty
+TFOGC0  			= empty
+TFOGD0  			= empty
+TFOGE0  			= empty
+TFOGF0  			= empty
+TFOGG0  			= empty
+TFOGH0  			= empty
+TFOGI0  			= empty
+TFOGJ0  			= empty
+IFOGA0  			= empty
+IFOGB0  			= empty
+IFOGC0  			= empty
+IFOGD0  			= empty
+IFOGE0  			= empty
+PUNGA0  	-151	-126
+PUNGB0  	-67	-127
+PUNGC0  	-52	-116
+PUNGD0  	-36	-92
 
-PLAYA0    = empty
-PLAYB0    = empty
-PLAYC0    = empty
-PLAYD0    = empty
-PLAYE0    = empty
-PLAYF0    = empty
-PLAYG0    = empty
-PLAYH0    = empty
-PLAYI0    = empty
-PLAYJ0    = empty
-PLAYK0    = empty
-PLAYL0    = empty
-PLAYM0    = empty
-PLAYN0    = empty
-PLAYO0    = empty
-PLAYP0    = empty
-PLAYQ0    = empty
-PLAYR0    = empty
-PLAYS0    = empty
-PLAYT0    = empty
-PLAYU0    = empty
-PLAYV0    = empty
-PLAYW0    = empty
+PLAYA0   			= empty
+PLAYB0   			= empty
+PLAYC0   			= empty
+PLAYD0   			= empty
+PLAYE0   			= empty
+PLAYF0   			= empty
+PLAYG0   			= empty
+PLAYH0   			= empty
+PLAYI0   			= empty
+PLAYJ0   			= empty
+PLAYK0   			= empty
+PLAYL0   			= empty
+PLAYM0   			= empty
+PLAYN0   			= empty
+PLAYO0   			= empty
+PLAYP0   			= empty
+PLAYQ0   			= empty
+PLAYR0   			= empty
+PLAYS0   			= empty
+PLAYT0   			= empty
+PLAYU0   			= empty
+PLAYV0   			= empty
+PLAYW0   			= empty
 
 [patches]
 # TODO: These shouldn't really be in the kernel; they're only here
@@ -501,7 +501,7 @@ tech01  	= bigdoor2
 tech04  	= bigdoor2
 
 [flats]
-f_sky1 = mflr8_1
-floor4_8 = mflr8_1 # Used for text screen at end of E1.
-mflr8_1            # Used for background when not running fullscreen.
+f_sky1  	= mflr8_1
+floor4_8	= mflr8_1 # Used for text screen at end of E1.
+mflr8_1 # Used for background when not running fullscreen.
 
