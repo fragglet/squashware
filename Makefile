@@ -5,7 +5,7 @@ DEUTEX_FLAGS = -doom2 bootstrap/
 
 WADS = newdoom1.wad newdoom1_1lev.wad newdoom1_silent.wad
 
-main: $(WADS)
+all: $(WADS)
 
 kernel.wad: kernel.txt
 	@rm -f $@
@@ -53,9 +53,17 @@ newdoom1.wad: 1lev_sounds.wad sounds.wad newdoom1_silent.wad
 
 # TODO: We should strip the _DEUTEX_ lump that deutex leaves behind.
 
+check: $(WADS)
+	make -C playthru check
+
+doof: $(WADS)
+	make -C doof
+
 clean:
 	rm -f kernel.wad \
 	      newdoom1_1lev_silent.wad 1lev.wad \
 	      newdoom1_1lev.wad 1lev_sounds.wad \
 	      newdoom1_silent.wad sounds.wad \
 	      newdoom1.wad main.wad
+
+.PHONY: check clean doof all
