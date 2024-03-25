@@ -30,7 +30,7 @@ jobs:
         make -j5
     - name: Build WAD
       run: |
-        PATH="$PWD/wadptr:$PATH" ./build.sh
+        PATH="$PWD/wadptr:$PATH" make
         mkdir artifacts-wad
         cp newdoom1.wad artifacts-wad
         mkdir artifacts-silent-wad
