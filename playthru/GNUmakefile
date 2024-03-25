@@ -11,7 +11,7 @@ OUTPUTS = output/13skill1.txt \
 all: check
 
 output/%.txt: demos/%.lmp ../newdoom1.wad ../newdoom1_1lev.wad testrunner
-	mkdir -p output
+	@mkdir -p output
 	./testrunner $< > $@
 
 check: $(OUTPUTS)
