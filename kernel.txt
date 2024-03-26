@@ -15,9 +15,9 @@ E1M9    	= empty
 PLAYPAL
 COLORMAP
 ENDOOM
-DEMO1   	= e1m1demo
-DEMO2   	= e1m1demo
-DEMO3   	= e1m1demo
+DEMO1   	= nulldemo
+DEMO2   	= nulldemo
+DEMO3   	= nulldemo
 GENMIDI
 DMXGUS
 
