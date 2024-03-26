@@ -205,9 +205,12 @@ TREDB0  	14	87
 TREDC0  	14	87
 TREDD0  	14	93
 
+[texture2]
+# TEXTURE2 defines the additional textures not used in E1M1.
+texture2
+
 [patches]
 # All of the extra wall patches not found in 1lev:
-ash01
 bigdoor6
 brick01
 brick02

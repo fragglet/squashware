@@ -1,0 +1,89 @@
+; Additional textures used for the full version of the IWAD that
+; includes M2-M9.
+
+ash01       64   128
+* ash01     0   0
+* ash01     0   64
+bigdoor6    64   112
+* bigdoor6  0   0
+brick01     64   128
+* brick01   0   0
+brick02     64   128
+* brick02   0   0
+brick03     64   128
+* brick03   0   0
+brnpois     64   128
+* browngrn  0   0
+* ps20a0    1   60
+cement01    64   128
+* cement01  0   64
+* cement01  32  64
+* cement01  0   0
+* cement01  32  0
+door1       64   72
+* door1     0   0
+doorblu     8   128
+* doorblu   0   0
+* doorblu   0   16
+* doorblu   0   32
+* doorblu   0   48
+* doorblu   0   64
+* doorblu   0   80
+* doorblu   0   96
+* doorblu   0   112
+doorred     8   128
+* doorred   0   0
+* doorred   0   16
+* doorred   0   32
+* doorred   0   48
+* doorred   0   64
+* doorred   0   80
+* doorred   0   96
+* doorred   0   112
+dooryel     8   128
+* dooryel   0   0
+* dooryel   0   16
+* dooryel   0   32
+* dooryel   0   48
+* dooryel   0   64
+* dooryel   0   80
+* dooryel   0   96
+* dooryel   0   112
+gray5       64   128
+* gray5     0   0
+* gray5     0   63
+* gray5     0   72
+metal       64   128
+* metal     0   0
+metal1      64   128
+* metal1    0   0
+* metal1    0   64
+pipe2       64   128
+* pipe2     0   0
+plat1       128   128
+* plat1     0   0
+shawn2      64   128
+* shawn2    0   -20
+* shawn2    0   36
+* shawn2    0   92
+sladwall    64   128
+* sladwall  0   0
+* sladwall  0   32
+* sladwall  0   64
+* sladwall  0   96
+support3    64   128
+* support3  0   0
+tech01      64   128
+* tech01    0   0
+* tech01    32  0
+* tech01    0   64
+* tech01    32  64
+tech02      64   128
+* tech01    0   0
+* tech01    32  0
+* tech01    0   64
+* tech01    32  64
+* litestrp  0   0
+tech04      64   128
+* tech04    0   0
+* tech04    0   64

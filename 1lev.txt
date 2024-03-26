@@ -333,11 +333,13 @@ BON2D0  	7	13
 
 [patches]
 # Only the patches used in textures on E1M1:
+ash01
 bigdoor2
 brown1
+browngrn
+compscrn
 compspan
 comptall
-compscrn
 ct2panel
 door3
 doorstop

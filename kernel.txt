@@ -455,50 +455,30 @@ PLAYV0   			= empty
 PLAYW0   			= empty
 
 [patches]
-# TODO: These shouldn't really be in the kernel; they're only here
+# TODO: Most of these shouldn't really be in the kernel; they're only here
 # because TEXTURE1 references them.
 ash01   	= bigdoor2
 bigdoor2
-bigdoor6	= bigdoor2
-brick01 	= bigdoor2
-brick02 	= bigdoor2
-brick03 	= bigdoor2
 brown1  	= bigdoor2
-cement01	= bigdoor2
+browngrn	= bigdoor2
+compscrn	= bigdoor2
 compspan	= bigdoor2
 comptall	= bigdoor2
-compscrn	= bigdoor2
 ct2panel	= bigdoor2
-door1   	= bigdoor2
 door3   	= bigdoor2
-doorblu 	= bigdoor2
-doorred 	= bigdoor2
 doorstop	= bigdoor2
 doortrak	= bigdoor2
-dooryel 	= bigdoor2
 exitdoor	= bigdoor2
 exitsign	= bigdoor2
-gray5   	= bigdoor2
 lite5   	= bigdoor2
-litestrp	= bigdoor2
-metal1  	= bigdoor2
-metal   	= bigdoor2
 nuke24  	= bigdoor2
-pipe2   	= bigdoor2
-plat1   	= bigdoor2
-ps20a0  	= bigdoor2
-shawn2  	= bigdoor2
 sky1    	= bigdoor2
-sladwall	= bigdoor2
 step6   	= bigdoor2
 stwar01 	= bigdoor2
 stwar02 	= bigdoor2
 support2	= bigdoor2
-support3	= bigdoor2
 sw3s0   	= bigdoor2
 sw3s1   	= bigdoor2
-tech01  	= bigdoor2
-tech04  	= bigdoor2
 
 [flats]
 f_sky1  	= mflr8_1

@@ -1,34 +1,18 @@
-;Format of textures:
-;TextureName	Width	Height
-;*	PatchName	Xoffset	Yoffset
+; These textures are just the ones needed for E1M1 and the "1lev"
+; version of the IWAD. For the full version and M2-9, additional
+; textures are defined in TEXTURE2.
+
+; TODO: all use of ASH01 should be replaced so that patch can be
+; omitted from the IWAD.
 
 aashitty    64  64
 * ash01     0   0
-ash01       64   128
-* ash01     0   0
-* ash01     0   64
 bigdoor2    128   128
 * bigdoor2  0   0
-bigdoor6    64   112
-* bigdoor6  0   0
-brick01     64   128
-* brick01   0   0
-brick02     64   128
-* brick02   0   0
-brick03     64   128
-* brick03   0   0
-brnpois     64   128
-* browngrn  0   0
-* ps20a0    1   60
 brown1      64   128
 * brown1    0   0
 browngrn    64   128
 * browngrn  0   0
-cement01    64   128
-* cement01  0   64
-* cement01  32  64
-* cement01  0   0
-* cement01  32  0
 compspan    32   128
 * compspan  0   0
 comptall    128   128
@@ -45,49 +29,16 @@ comtal02    64  128
 * compscrn  37  71
 * compscrn  5   92
 * compscrn  37  92
-door1       64   72
-* door1     0   0
 door3       64   72
 * door3     0   0
-doorblu     8   128
-* doorblu   0   0
-* doorblu   0   16
-* doorblu   0   32
-* doorblu   0   48
-* doorblu   0   64
-* doorblu   0   80
-* doorblu   0   96
-* doorblu   0   112
-doorred     8   128
-* doorred   0   0
-* doorred   0   16
-* doorred   0   32
-* doorred   0   48
-* doorred   0   64
-* doorred   0   80
-* doorred   0   96
-* doorred   0   112
 doorstop    8   128
 * doorstop  0   0
 doortrak    8   128
 * doortrak  0   0
-dooryel     8   128
-* dooryel   0   0
-* dooryel   0   16
-* dooryel   0   32
-* dooryel   0   48
-* dooryel   0   64
-* dooryel   0   80
-* dooryel   0   96
-* dooryel   0   112
 exitdoor    128   72
 * exitdoor  0   0
 exitsign    64   16
 * exitsign  0   0
-gray5       64   128
-* gray5     0   0
-* gray5     0   63
-* gray5     0   72
 lite5       16   128
 * lite5     0   0
 * lite5     0   8
@@ -105,28 +56,10 @@ lite5       16   128
 * lite5     0   104
 * lite5     0   112
 * lite5     0   120
-metal       64   128
-* metal     0   0
-metal1      64   128
-* metal1    0   0
-* metal1    0   64
 nuke24      64   24
 * nuke24    0   0
-pipe2       64   128
-* pipe2     0   0
-plat1       128   128
-* plat1     0   0
-shawn2      64   128
-* shawn2    0   -20
-* shawn2    0   36
-* shawn2    0   92
 sky1        256   128
 * sky1      0   0
-sladwall    64   128
-* sladwall  0   0
-* sladwall  0   32
-* sladwall  0   64
-* sladwall  0   96
 step6       32   128
 * step6     0   0
 * step6     0   16      ; prevents tutti frutti
@@ -142,8 +75,6 @@ stwar02     32   128
 * stwar02   0   0
 support2    64   128
 * support2  0   0
-support3    64   128
-* support3  0   0
 sw1brn1     64   128
 * brown1    0   0
 * sw3s0     19  75
@@ -156,20 +87,6 @@ sw1strtn    32   128  ; renamed from SW1STAR to use a vanilla built-in name
 sw2strtn    32   128
 * stwar01   0   0
 * sw3s1     3   77
-tech01      64   128
-* tech01    0   0
-* tech01    32  0
-* tech01    0   64
-* tech01    32  64
-tech02      64   128
-* tech01    0   0
-* tech01    32  0
-* tech01    0   64
-* tech01    32  64
-* litestrp  0   0
-tech04      64   128
-* tech04    0   0
-* tech04    0   64
 
 ; needed for doom startup
 SW1BRCOM    64  64
