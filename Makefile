@@ -51,14 +51,14 @@ newdoom1.wad: build/1lev_sounds.wad build/sounds.wad newdoom1_silent.wad
 # TODO: We should strip the _DEUTEX_ lump that deutex leaves behind.
 
 check: $(WADS)
-	make -C playthru check
+	$(MAKE) -C playthru check
 
 doof: $(WADS)
-	make -C doof
+	$(MAKE) -C doof
 
 clean:
-	make -C playthru clean
-	make -C doof clean
+	$(MAKE) -C playthru clean
+	$(MAKE) -C doof clean
 	rm -f $(WADS)
 	rm -rf build
 
