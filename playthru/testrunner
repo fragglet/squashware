@@ -30,6 +30,12 @@ $SOURCE_PORT -iwad "$iwad" \
              -noblit -noautoload -nogui -nograbmouse \
              -statdump $tmp/statdump.txt "$@" >$tmp/log.txt 2>&1 || true
 
+if ! grep -q "timed [0-9]* gametics in" $tmp/log.txt; then
+	echo "Expected -timedemo line not found in log:" >&2
+	cat $tmp/log.txt >&2
+	exit 1
+fi
+
 #cat $tmp/log.txt 1>&2
 
 cat $tmp/statdump.txt
