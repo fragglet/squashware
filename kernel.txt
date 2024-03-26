@@ -487,7 +487,7 @@ sw3s0   	= bigdoor2
 sw3s1   	= bigdoor2
 
 [flats]
-f_sky1  	= mflr8_1
-floor4_8	= mflr8_1 # Used for text screen at end of E1.
-mflr8_1 # Used for background when not running fullscreen.
+f_sky1  	= floor7_2
+floor4_8	= floor7_2 # Used for text screen at end of E1.
+floor7_2 # Used for background when not running fullscreen.
 
