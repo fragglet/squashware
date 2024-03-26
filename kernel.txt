@@ -1,9 +1,15 @@
 # The absolute minimum resources needed for an IWAD file.
 
 [levels]
-# TODO: This should probably be some kind of minimal one-room level.
-# The real E1M1 won't work.
-E1M1
+E1M1    	= empty
+E1M2    	= empty
+E1M3    	= empty
+E1M4    	= empty
+E1M5    	= empty
+E1M6    	= empty
+E1M7    	= empty
+E1M8    	= empty
+E1M9    	= empty
 
 [lumps]
 PLAYPAL
