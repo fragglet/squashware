@@ -60,6 +60,7 @@ nuke24      64   24
 * nuke24    0   0
 sky1        256   128
 * sky1      0   0
+* sky1      128 0
 step6       32   128
 * step6     0   0
 * step6     0   16      ; prevents tutti frutti
