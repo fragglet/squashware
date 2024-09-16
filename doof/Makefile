@@ -20,7 +20,7 @@ DOOF.EXE: doof.lzh
 
 doof.lzh: staging
 	rm -f $@
-	cd $<; lha -ao5 ../$@ *
+	cd $<; lha -ao6 ../$@ *
 
 check: doof.img staging
 	rm -rf /tmp/doof-autoinst
