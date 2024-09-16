@@ -36,8 +36,8 @@ staging: $(FASTDOOM_FILES) ../newdoom1.wad
 	rm -rf staging
 	mkdir -p staging/inter
 	cp $(FASTDOOM_FILES) staging/
-	upx -9 staging/fdoom.exe
-	upx -9 staging/fdsetup.exe
+	upx --lzma staging/fdoom.exe
+	upx --lzma staging/fdsetup.exe
 	cp fastdoom/inter/e1.txt staging/inter/
 	cp ../newdoom1.wad staging/doom1.wad
 
