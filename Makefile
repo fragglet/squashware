@@ -1,4 +1,3 @@
-#!/bin/bash
 
 BSP = zokumbsp
 BSPFLAGS = -bco=4rsz=0 -nbm=sa=mp=m -rz
