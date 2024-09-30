@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BSP = zokumbsp
+BSPFLAGS = -bco=4rsz=0 -nbm=sa=mp=m -rz
+
 WADPTR_FLAGS = -wipesides -q
 DEUTEX_FLAGS = -doom2 build/kernel
 
@@ -49,6 +52,9 @@ newdoom1.wad: build/1lev_sounds.wad build/sounds.wad newdoom1_silent.wad
 	wadptr $(WADPTR_FLAGS) -c $@
 
 # TODO: We should strip the _DEUTEX_ lump that deutex leaves behind.
+
+rebuild-nodes: $(wildcard levels/*.wad)
+	for f in $^; do $(BSP) $(BSPFLAGS) $$f -o $$f; done
 
 check: $(WADS)
 	$(MAKE) -C playthru check
