@@ -39,3 +39,10 @@ Perfect for when you just want to make a demo video of your port of Doom
 to run on a dead badger, and you're not really serious about actually
 playing the game all the way through.
 
+## Users
+
+* [DOOM Keeb](https://learn.adafruit.com/doom-keeb?view=all) by John Park,
+  showing how to run Doom from the flash memory of the Adafruit KB2040
+  keyboard.
+* [coreDOOM on my Coreboot ThinkPad](https://www.youtube.com/watch?v=lydR_nBSLwk)
+  by dskzrock (Doom running in the coreboot bootloader!)
