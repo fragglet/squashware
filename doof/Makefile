@@ -2,6 +2,8 @@
 FASTDOOM_FILES = fastdoom/doom1.tcf fastdoom/fdoom.exe fastdoom/fdsetup.exe \
                  fastdoom/readme.txt
 
+all: doof.img doofboot.img
+
 doof.img: empty.img install/doof.dat DOOF.EXE
 	cp empty.img $@
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
@@ -9,6 +11,14 @@ doof.img: empty.img install/doof.dat DOOF.EXE
 	@echo
 	@cat DIRLIST.TXT
 	@rm -f DIRLIST.TXT
+
+doofboot.img: svardos-minimal.img install/doof.dat DOOF.EXE
+	cp svardos-minimal.img $@
+	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
+	    dosbox -conf mkdiskboot.cfg
+	@echo
+	@cat DIRLISTB.TXT
+	@rm -f DIRLISTB.TXT
 
 install/doof.dat: doof.dat.template DOOF.EXE
 	sed "s/9999999/$$(stat -c "%s" DOOF.EXE)/" \
@@ -42,6 +52,6 @@ staging: $(FASTDOOM_FILES) ../newdoom1.wad
 	cp ../newdoom1.wad staging/doom1.wad
 
 clean:
-	rm -rf doof.img staging DOOF.EXE doof.lzh \
+	rm -rf doof.img doofboot.img staging DOOF.EXE doof.lzh \
                install/doof.dat
 
