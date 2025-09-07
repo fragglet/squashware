@@ -62,13 +62,13 @@ jobs:
         cd doof
         make
         mkdir artifacts-doof
-        cp doof.img artifacts-doof
+        cp doof.img doofboot.img artifacts-doof
     - name: Test DOOF install
       timeout-minutes: 5
       run: |
         cd doof
         make check
-    - name: Upload DOOF disk image
+    - name: Upload DOOF disk images
       uses: actions/upload-artifact@v4
       with:
         path: "doof/artifacts-doof"
