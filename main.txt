@@ -213,8 +213,7 @@ texture2
 # All of the extra wall patches not found in 1lev:
 bigdoor6
 brick01
-brick02
-brick03
+brickgor
 brown1
 cement01
 door1

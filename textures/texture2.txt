@@ -8,10 +8,9 @@ bigdoor6    64   112
 * bigdoor6  0   0
 brick01     64   128
 * brick01   0   0
-brick02     64   128
-* brick02   0   0
 brick03     64   128
-* brick03   0   0
+* brick01   0   0
+* brickgor  0   0
 brnpois     64   128
 * browngrn  0   0
 * ps20a0    1   60
