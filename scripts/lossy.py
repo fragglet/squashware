@@ -5,11 +5,39 @@
 # resulting graphic lump.
 
 import PIL.Image
+import colorsys
 import math
 import sys
 
+# Larger value tries harder to preserve brightness level; lower value
+# tries harder to preserve color.
+COLOR_BALANCE = 3.0
+
 # If two columns are at most this similar, they will be merged.
-THRESHOLD = 0.005
+THRESHOLD = 0.008
+
+def rgba_to_xyza(rgba):
+    """Maps from RGB colorspace to a more perceptual colorspace.
+
+    This maps to a HSV color "cone" where euclidean distance better
+    matches human perception.
+    """
+    r, g, b, a = rgba
+    h, s, v = colorsys.rgb_to_hsv(r, g, b)
+    v = v / 255.0
+    angle = 2 * math.pi * h
+    return (
+        math.cos(angle) * s * v,
+        math.sin(angle) * s * v,
+        v * COLOR_BALANCE,
+        a / 255.0,
+    )
+
+def compare_colors(rgba1, rgba2):
+    x1, y1, z1, a1 = rgba_to_xyza(rgba1)
+    x2, y2, z2, a2 = rgba_to_xyza(rgba2)
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2
+          + (z1 - z2) ** 2 + (a1 - a2) ** 2)
 
 def compare_columns(im, x1, x2):
     _, h = im.size
@@ -17,13 +45,8 @@ def compare_columns(im, x1, x2):
     total_diff = 0
 
     for y in range(h):
-        r1, g1, b1, a1 = im.getpixel((x1, y))
-        r2, g2, b2, a2 = im.getpixel((x2, y))
-        diff = ((r1 - r2) ** 2 +
-                (g1 - g2) ** 2 +
-                (b1 - b2) ** 2 +
-                (a1 - a2) ** 2)
-        diff = diff / (255 * 255)
+        diff = compare_colors(im.getpixel((x1, y)),
+                              im.getpixel((x2, y)))
         total_diff += diff
 
     return math.sqrt(total_diff) / h
