@@ -51,7 +51,8 @@ def process_image(filename):
             total_merged += 1
 
     print("%s: %d columns merged" % (filename, total_merged))
-    im.save(filename)
+    if total_merged > 0:
+        im.save(filename)
 
 
 for filename in sys.argv[1:]:
