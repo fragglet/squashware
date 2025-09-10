@@ -33,10 +33,12 @@ def process_image(filename):
 
     w, h = im.size
     total_merged = 0
-    for x in range(1, w):
+    for x in range(2, w):
         best_x = None
         best_diff = 999999999
-        for x2 in range(x):
+        # Don't copy from the column right next to this one, as it
+        # is a lot more obvious/visible:
+        for x2 in range(x - 1):
             diff = compare_columns(im, x, x2)
             if diff < best_diff:
                 best_x = x2
