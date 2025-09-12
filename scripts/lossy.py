@@ -51,6 +51,17 @@ def compare_columns(im, x1, x2):
 
     return math.sqrt(total_diff) / h
 
+def copy_column(im, to_x, from_x):
+    _, h = im.size
+    modified = False
+    for y in range(h):
+        old_color = im.getpixel((to_x, y))
+        new_color = im.getpixel((from_x, y))
+        if old_color != new_color:
+            im.putpixel((to_x, y), new_color)
+            modified = True
+    return modified
+
 def process_image(filename):
     im = PIL.Image.open(filename).convert("RGBA")
 
@@ -68,9 +79,7 @@ def process_image(filename):
                 best_diff = diff
         #print("%4d: closest is %4d (%6f)" % (x, best_x, best_diff))
 
-        if best_diff < THRESHOLD:
-            for y in range(h):
-                im.putpixel((x, y), im.getpixel((best_x, y)))
+        if best_diff < THRESHOLD and copy_column(im, x, best_x):
             total_merged += 1
 
     print("%s: %d columns merged" % (filename, total_merged))
