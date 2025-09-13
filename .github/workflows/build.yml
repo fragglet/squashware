@@ -62,7 +62,7 @@ jobs:
         cd doof
         make
         mkdir artifacts-doof
-        cp doof.img doofboot.img artifacts-doof
+        cp doof.img artifacts-doof
     - name: Test DOOF install
       timeout-minutes: 5
       run: |
