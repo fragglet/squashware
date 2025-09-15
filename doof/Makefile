@@ -2,15 +2,23 @@
 FASTDOOM_FILES = fastdoom/doom1.tcf fastdoom/fdoom.exe fastdoom/fdsetup.exe \
                  fastdoom/readme.txt
 
-all: doof.img
+all: doof-1.2M.img doof-1.44M.img
 
-doof.img: svardos-minimal.img install/doof.dat DOOF.EXE
-	cp svardos-minimal.img $@
+doof-1.2M.img: svdos-1.2M.img install/doof.dat DOOF.EXE
+	cp svdos-1.2M.img $@
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
-	    dosbox -conf mkdisk.cfg
+	    dosbox -conf mkdisk-1.2M.cfg
 	@echo
 	@cat DIRLIST.TXT
 	@rm -f DIRLIST.TXT
+
+doof-1.44M.img: svdos-1.44M.img install/doof.dat DOOF.EXE
+	cp svdos-1.44M.img $@
+	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
+	    dosbox -conf mkdisk-1.44M.cfg
+	@echo
+	@cat DIRLIST2.TXT
+	@rm -f DIRLIST2.TXT
 
 install/doof.dat: doof.dat.template DOOF.EXE
 	sed "s/9999999/$$(stat -c "%s" DOOF.EXE)/" \
@@ -24,7 +32,7 @@ doof.lzh: staging
 	rm -f $@
 	cd $<; lha -ao6 ../$@ *
 
-check: doof.img staging
+check: doof-1.2M.img staging
 	rm -rf /tmp/doof-autoinst
 	mkdir /tmp/doof-autoinst
 	SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=dummy \
@@ -44,4 +52,5 @@ staging: $(FASTDOOM_FILES) ../newdoom1.wad
 	cp ../newdoom1.wad staging/doom1.wad
 
 clean:
-	rm -rf doof.img staging DOOF.EXE doof.lzh install/doof.dat
+	rm -rf doof-1.2M.img doof-1.44M.img staging \
+	       DOOF.EXE doof.lzh install/doof.dat
