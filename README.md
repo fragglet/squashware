@@ -1,3 +1,8 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/fragglet/squashware/build.yml)
+![GitHub Release](https://img.shields.io/github/v/release/fragglet/squashware)
+![GitHub repo size](https://img.shields.io/github/repo-size/fragglet/squashware)
+[![GitHub Repo stars](https://img.shields.io/github/stars/fragglet/squashware)](https://github.com/fragglet/squashware/stargazers)
+
 ![Monty Python foot squashing the Doom status bar face](headsquash.png)
 
 **DOOM: Squashware Edition** is a rework of the Doom Shareware IWAD
