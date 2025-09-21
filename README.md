@@ -16,7 +16,7 @@ build a version of shareware Doom that fits on one floppy disk (1.44 MB
 3½" or 1.2 MB 5¼").
 
 What you will notice:
-* IWAD file size under 1.8MB
+* IWAD file size under 1.7MB
 * Console Doom levels
 * Restricted texture set
 * Shorter sound effects
@@ -32,15 +32,15 @@ What you might be less likely to notice:
 
 ![Doom face gets squashed some more](headsquash2.png)
 
-Is a 1.8MB IWAD file still too large for you? The *silent* version removes
-all the sound effects and is under 1.5MB. Perfect for when running Doom on
-your hair dryer which doesn't have a speaker anyway.
+Is a 1.7MB IWAD file still too large for you? The *silent* version removes
+all the music and sound effects and is under 1.4MB. Perfect for when running
+Doom on your hair dryer which doesn't have a speaker anyway.
 
 ## But wait, there's more!
 
 ![Doom face gets squashed even more](headsquash3.png)
 
-Is a 1.5MB IWAD file still too large for you? The *1-level* version
+Is a 1.4MB IWAD file still too large for you? The *1-level* version
 removes all except the first level of the game, and is under 700KB.
 Perfect for when you just want to make a demo video of your port of Doom
 to run on a dead badger, and you're not really serious about actually
