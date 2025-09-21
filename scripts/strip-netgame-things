@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+from omg import *
+import sys
+
+for filename in sys.argv[1:]:
+    inwad = WAD()
+    inwad.from_file(filename)
+    outwad = WAD()
+    for mapname in inwad.maps:
+        edit = MapEditor(inwad.maps[mapname])
+        # Strip out all things with the multiplayer-only flag set, except
+        # for player starts:
+        edit.things = [
+            t for t in edit.things
+            if t.type in (1, 2, 3, 4, 11) or not t.multiplayer
+        ]
+        outwad.maps[mapname] = edit.to_lumps()
+    outwad.to_file(filename)
