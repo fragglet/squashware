@@ -1,0 +1,256 @@
+===========================================
+E1M1
+===========================================
+
+Time: 0:12 (par: 0:30)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 1 / 15 (6%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 15 (0%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 15 (0%)
+	Secrets: 0 / 3 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 15 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M2
+===========================================
+
+Time: 0:26 (par: 1:15)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 1 / 22 (4%)
+	Secrets: 0 / 6 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 6 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 6 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 6 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M3
+===========================================
+
+Time: 1:03 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 9 / 39 (23%)
+	Secrets: 4 / 7 (57%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 39 (0%)
+	Secrets: 0 / 7 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 39 (0%)
+	Secrets: 0 / 7 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 39 (0%)
+	Secrets: 0 / 7 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M9
+===========================================
+
+Time: 1:37 (par: 2:45)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 5 / 22 (22%)
+	Secrets: 0 / 2 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 2 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 2 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 2 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M4
+===========================================
+
+Time: 0:34 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 3 / 25 (12%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 25 (0%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 25 (0%)
+	Secrets: 0 / 4 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 25 (0%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M5
+===========================================
+
+Time: 0:57 (par: 2:45)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 3 / 14 (21%)
+	Secrets: 0 / 9 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 14 (0%)
+	Secrets: 0 / 9 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 14 (0%)
+	Secrets: 0 / 9 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 14 (0%)
+	Secrets: 0 / 9 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M6
+===========================================
+
+Time: 1:18 (par: 3:00)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 12 / 23 (52%)
+	Secrets: 3 / 3 (100%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 23 (0%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 23 (0%)
+	Secrets: 0 / 3 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 23 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
+===========================================
+E1M7
+===========================================
+
+Time: 1:38 (par: 3:00)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 11 / 38 (28%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 0 / 38 (0%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 0 / 38 (0%)
+	Secrets: 0 / 3 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 0 / 38 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+
