@@ -54,3 +54,4 @@ playing the game all the way through.
 * [coreDOOM on my Coreboot ThinkPad](https://www.youtube.com/watch?v=lydR_nBSLwk)
   by dskzrock (Doom running in the coreboot bootloader!)
 * [DOOMBuds](https://doombuds.com/) by Arin Sarkisian (Doom on Pinebuds Pro earbud headphones)
+* [Doom on an office phone](https://habr.com/ru/amp/publications/1003806/) by petergriffin (Russian language article) 
