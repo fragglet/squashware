@@ -43,6 +43,7 @@ jobs:
         mkdir artifacts-1lev-wad
         cp newdoom1_1lev.wad artifacts-1lev-wad
     - name: Check demo sync
+      timeout-minutes: 10
       run: |
         cd playthru
         make -j5 check
