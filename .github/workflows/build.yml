@@ -1,6 +1,11 @@
 name: Makefile CI
 
-on: [push, pull_request, workflow_dispatch]
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:  # Weekly build
+    - cron: "0 1 * * 1"
 
 jobs:
   build:
